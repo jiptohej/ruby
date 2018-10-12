@@ -1,0 +1,22 @@
+#! /usr/bin/env ruby
+# encodign: utf-8
+#
+
+class String
+  def word_count
+      frequencies = Hash.new(0)
+      downcase.scan(/\w+/) {|word| frequencies[word]+=1 }
+      return frequencies
+  end
+end
+
+puts "El número de veces que aparece cada palabra"
+h= %{ José Luis Torre Hernández }.word_count
+h.each {|key, value| puts "#{key} #{value}"}
+
+
+$KCODE='u'
+
+puts "El número de veces que aparece cada palabra"
+h= %{ José Luis Torre Hernández }.word_count
+h.each {|key, value| puts "#{key} #{value}"}

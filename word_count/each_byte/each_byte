@@ -1,0 +1,45 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+texto='
+Este es un texto que analizaremos,
+caracter a caracter y posteriormente
+byte a byte.
+áéíóúñÑÁÉÍÓÚ
+podrá comprobarse que algunos 
+caracteres están formados por
+más de un byte, aunque eso no se
+detecta bien al leer mediante :each_byte,
+pero debería...'
+
+nombre='Lucía'
+
+puts "Utilizando :each_byte"
+nombre.each_byte {|b| puts "#{b} = #{b.chr}"}
+puts "Utilizando :scan"
+nombre.scan(/./) {|b| puts b}
+puts "Utilizando :scan en modo Unicode"
+nombre.scan(/./u) {|b| puts b}
+
+# Si queremos que Ruby trate todas las cadenas
+# como Unicode, es suficiente con establecer
+# la variable global $KCODE='u'
+#
+# Después de establecer esta variable,
+# todos los caracteres que estén formados
+# por varios bytes, serán tratados como
+# un único caracter (incluso los no visibles)
+#
+
+$KCODE='u'
+
+nombre='José Luis Torre Hernández'
+nombre.scan(/./) {|b| print b}
+puts
+
+nombre.each_byte {|b| print "#{b} = #{b.chr}"}
+
+
+# nombre.each {|b| print "#{b} "}
+
+

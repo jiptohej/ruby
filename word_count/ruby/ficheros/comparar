@@ -1,0 +1,38 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+=begin
+
+ 1) Si existe uno y el otro no, son distintos
+ 2) Si no existe ninguno, son iguales
+ 3) Si es el mismo archivo, son iguales
+ 4) Si son de diferente tamaño, son distintos
+ 5) Si son de distinto tipo, son distintos
+
+=end
+
+p1 = ARGV[0]
+p2 = ARGV[1]
+
+class File
+  def File.mismo_contenido(p1, p2)
+      return false if File.exist?(p1) != File.exists(p2)
+      return true if !File.exist?(p1) && !File.exists(p2)
+      return true if File.expand_path(p1) == File.expand_path(p2) 
+      return false if File.ftype(p1) != File.ftype(p2)
+      return false if File.size(p1) != File.size(p2)
+
+  open(p1) do |f1|
+   open(p2) do |f2|
+     blocksize = f1.lstat.blksize
+     same = true
+     while same && !f1.eof? && !f2.eof?
+           same = f1.read(blocksize) == f2.read(blocksize)
+     end
+     return same
+   end
+  end
+ end
+end
+
+p File.mismo_contenido(p1, p2)

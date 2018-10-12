@@ -1,0 +1,1 @@
+info("Mensaje de informacion")

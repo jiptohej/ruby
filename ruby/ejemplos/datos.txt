@@ -1,0 +1,18 @@
+Alternativas para Windows
+=========================
+Notepad++
+Scite
+Geany
+
+Alternativas para Unix
+======================
+Editores...
+vi
+vim
+Scite
+Sublime
+
+Entornos...
+Geany
+Eclipse
+Aptana

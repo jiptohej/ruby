@@ -1,0 +1,59 @@
+#! /usr/bin/env ruby
+# coding: utf-8
+
+require 'set'
+
+n = Set.new((1..10).collect)  # notas
+
+clases = n.divide { |x| x >= 5 }
+
+p clases
+
+clases = n.divide { |x| x < 5 }
+
+p clases
+
+clases = n.divide { |x| x % 2 == 0 }
+
+p clases
+
+s = [ 1, -2, 8, 9, 23, 5.6, -4.5, 9.3].to_set
+
+clases = s.divide { |x| x < 5 }
+
+p clases
+
+s = [ 1, -1, 2, -2, 3, -3, 4, 5, -1, -3].to_set 
+
+#clases = s.divide { |x,y| abs(x)==abs(y) }
+
+clases = s.divide { |x,y| x.abs()==y.abs()}
+
+p clases
+
+s = [ 1, -1, 2, -2, 3, -3, 4, 5, -1, -3].to_set 
+
+clases = s.divide { |x,y| (x-y).abs==1}
+
+p clases
+
+nota='
+Para entender el ej. anterior se ha de tener
+en cuenta que la clasificación que hace
+TSort#each_strongly_connected_component
+
+Un subconjunto fuertemente conectado es un
+conjunto de nodos tales que, comenzando
+desde cualquier nodo del subconjunto
+podemos seguir las flechas en un sentido
+y llegar a cualquier otro nodo del subconjunto.'
+
+puts nota
+
+
+s = [1, 1, 2, 6, 6, 7, 101].to_set
+
+clases = s.divide {|x| x % 2 == 0}
+
+p clases
+

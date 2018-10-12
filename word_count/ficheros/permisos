@@ -1,0 +1,20 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+def permisos (file='bin/ls')
+  sys=Process::Sys
+  puts "UID=#{sys.getuid}"
+  puts "GID=#{sys.getgid}"
+  puts "Efective UID=#{sys.geteuid}"
+  puts "Efective GID=#{sys.getegid}"
+  permitidos= [:readable?, :writable?, :executable?].inject([]) do |arr, method|
+       arr << method if File.send(method, file)
+       arr
+   end
+  puts "Para usted, #{file} es #{permitidos.join(', ')}"
+end
+
+permisos 
+
+permisos '/usr/bin/ruby' 
+

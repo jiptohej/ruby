@@ -1,0 +1,32 @@
+#! /usr/bin/jruby
+
+def menu
+  "`clear`"
+  puts "1. Añadir"
+  puts "2. Restar"
+  puts "3. Multiplicar"
+  puts "4. Dividir"
+  print "Opción:"
+  rta = gets.to_i
+  
+  case rta
+  when 1
+    puts "Realizar una suma"
+  when 2
+    puts "Realizar una resta"
+  when 3
+    puts "Realizar una multiplicación"
+  when 4
+    puts "Realizar una división"
+  end
+end
+
+
+def repite (algo)
+  while true
+   menu
+  end
+end
+
+repite(menu)
+

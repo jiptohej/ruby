@@ -1,0 +1,24 @@
+#! /usr/bin/env ruby
+#  coding: utf-8
+
+require 'complex'
+
+a = Complex(1, 4)
+
+p a.real
+
+p a.image
+
+b = Complex(2, 2)
+
+p b.real
+
+p b.image
+
+c = a + b
+
+p c.real
+
+p c.image
+
+

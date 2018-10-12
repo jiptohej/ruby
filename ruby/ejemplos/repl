@@ -1,0 +1,10 @@
+# Obtener un valor y mostrarlo
+def repl
+    print '>'
+    l = gets
+    break if l =~ /fin/
+    puts l
+end
+
+
+repl

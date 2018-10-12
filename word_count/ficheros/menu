@@ -1,0 +1,56 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+def espera_intro
+    print "pulsa la tecla 'intro' para continuar..."
+    gets
+end
+
+nombre_fichero='bitacora.txt'
+nombre_copia='bitacora.oro'
+
+texto_menu = '
+    1.- Mostrar el fichero de bitácora
+    2.- Añadir registros en la bitácora
+    3.- Mostrar el nombre del fichero de bitácora
+    4.- Modificar el nombre del fichero de bitácora
+    5.- Copiar el fichero de bitácora
+    6.- Editar el fichero de bitácora
+    7.- Añadir al fichero de seguridad 
+    8.- Mostrar el final de bitácora
+    0.- Salir de la aplicación
+    
+       Introducir la opción deseada....:'
+
+while true
+    system('clear')
+    print texto_menu
+    rta = gets.to_i()
+    
+    if rta==1
+       system("cat #{nombre_fichero}|more")
+       espera_intro
+    elsif rta==2
+       system('./bitacora')
+    elsif rta==3
+       system('./bitacora')
+    elsif rta==6
+       system("vi #{nombre_fichero}")
+    elsif rta==7
+      system("cat #{nombre_fichero} >> #{nombre_copia}")
+    elsif rta==8
+      system("tail -f #{nombre_fichero}")
+      espera_intro
+    elsif rta==0
+      puts "recuerda que soy muy útil"
+      break 
+    else 
+      system('clear')
+      print "opción incorrecta"
+      espera_intro
+      gets
+    end
+   
+end
+ 
+

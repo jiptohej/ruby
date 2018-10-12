@@ -1,0 +1,20 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+require 'rubygems'
+require 'highline/import'
+
+def confirmacion
+    respuestas = {}
+    respuestas[:nombre] = ask('¿Cuál es su nombre? ')
+    respuestas[:edad] = ask('¿Cuál es su edad? ', Integer) {|x| x.in = 0..790 }
+    respuestas[:motivo] = ask('¿Porqué le gustaría ser secretario del tesoro? ')
+
+    puts "De acuerdo, usted es nombrado"
+    return respuestas
+end
+
+confirmacion
+
+
+

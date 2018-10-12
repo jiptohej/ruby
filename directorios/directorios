@@ -1,0 +1,8 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+directorio=ARGV[0] 
+
+d= Dir.entries(directorio='.') 
+
+puts d

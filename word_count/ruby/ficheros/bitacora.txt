@@ -1,0 +1,91 @@
+Hoy es día 2 de febrero de 2013 y estamos
+en la tienda porque es
+sábado y le toca trabjar a MJ.
+
+Estoy leyendo, por segunda vez, el libro:
+
+Curso de Ruby
+
+de Lucas Carlson y Leonard Richardson
+
+traducido por Jesús García Corredera y Sergio Tarancón Faus
+
+de la editorial Anaya Multimedia
+
+Este libro lo compré en diciembre de 2010
+ya que me pareció muy interesante,
+le dediqué varios días,
+dos en Bilbo,
+pero por motivos ajenos a mi voluntad
+lo deje y me dediqué a otros asuntos.
+
+A finales de 2012, casi los últimos días,
+lo retomé y le he dedicado todo el tiempo
+libre del mes de enero.
+
+Ahora, en febrero, sigo con el,
+y con la idea de continuar dedicándole
+al menos hasta el final del verano.
+
+También he vuelto a utilizar el pequeño ordenador
+que me compré cuando fuimos a Lanzarote.
+
+Recordaba vágamente que disponía de los
+lenguajes de programación Python y Ruby,
+y con esa escusa, y con el pequeño resquemor
+que tenía por haberlo dejado en su caja
+desde hace más de un año,
+
+Me lo he traido a la tienda
+y lo estoy utilizando para comprobar
+los ejemplos del libro de Ruby.
+
+Lo cierto es que es fenomenal 
+para realizar ejercicios y hasta ahora
+no he notado que hubiera ningún fallo
+en el intérprete de Ruby.
+
+Estoy elaborando un programa que me permita
+registrar de forma sencilla las ideas que
+voy teniendo y que las almacene en un 
+fichero que luego depuraré convenientemente,
+por ejemplo con el editor o de cualquier
+otro modo que me parezca conveniente.
+
+*******************************************************
+Primero he pensado que ha sido un desastre instalar
+el xp sobre Linux (en virtual box) ya que me ha bloqueado
+el equipo 'antracita' porque todavía no había activado xp.
+*******************************************************
+Luego he pensado que ha sido finomenal, ya que de este
+modo puedo borrar la máquina virtual y no ha pasado nada.
+*******************************************************
+Decidir si instalar xp en el equipo antracita
+*******************************************************
+
+No se ha almacenado 'menu' en la red
+
+Traducir la respuesta recibida del servicio técnico de Asus
+
+Añadir: pulsar una tecla para continuar en 8
+
+Llamar a Kote: seguro de la casa y del coche
+Copiar lo realizado en antracita
+Es incomodísimo tener que copiar los cambios desde antracita a eeepc 
+y viceversa (a pesar de que lo tengo almacenado en Ubuntu One).
+
+
+Estaría bien que los registros se almacenaran en un servidor.
+
+************************** diciembre de 2013 *******************
+Retomo la escritura en este log después de dedicarme totalmente
+a preparar e impartir el curso de Fundamentos de Informática.
+El miércoles los alumnos realizarán el examen del proyecto
+y daré por finalizado el curso.
+
+Los exámenes tienen que prepararlos el resto de profesores
+y a mí me toca preparar el de Julio; por lo que dedicaré unos
+días a estudiar Ruby y recordar lo que había leído de este
+lenguaje.
+
+

@@ -1,0 +1,31 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+# generación de enteros pseudoaleatorios
+# encoding: utf-8
+
+def genera_1000_enteros(nombre)
+    open(nombre, 'w') do |f|
+     for i in 1..1000
+      f.printf("%d \n", rand(100000))
+     end
+    end
+end
+
+def main()
+    nombre_fichero='numeros_aleatorios.txt'
+    genera_1000_enteros(nombre_fichero)
+end
+
+main()
+
+
+genera_1000_enteros('numeros_aleatorios.txt')
+
+genera_1000_enteros 'numeros_aleatorios.txt' 
+
+genera_1000_enteros '1000.txt'
+
+
+
+

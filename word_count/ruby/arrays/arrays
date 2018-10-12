@@ -1,0 +1,30 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+# sumar los elementos de un array
+
+# a = (1..10).collect { rand(1000) } # ok
+
+# a = (0..10).to_a
+
+a = (0..100).to_a.sort_by { rand }
+
+p a
+
+print "el array ordenado es \n"
+
+p a.sort
+
+def sumar_array(a)
+    sum = 0.0
+    a.each {|x| sum += x }
+    return sum
+end
+
+def sumar_array(a)
+    a.inject(0) { |sum, x| sum + x }
+end
+
+suma = sumar_array(a)
+
+printf("la suma del array es igual a %.0f\n", suma)

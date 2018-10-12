@@ -1,0 +1,8 @@
+{'fabricacion' => [['materias_primas'],
+               ['productos_curso'],
+               ['productos_termi'],
+               ['restos'],
+              {'ordenes_fabricacion' =>
+                    ['ordenes', 'plegado\ntraquelado\npintura\nsecado'],
+                    ['peticiones']}
+}

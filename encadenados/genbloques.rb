@@ -83,7 +83,7 @@
    
       a = Array.new
       nr_bloque = 0        # número del bloque inicial
-      nr_bloques = 10000   # número de bloques a generar en la simulación
+      nr_bloques = 100     # número de bloques a generar en la simulación
    
       md5 = Digest::MD5.new
       md5sum = md5.hexdigest

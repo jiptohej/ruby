@@ -9,20 +9,28 @@ def genBlock (nr_bloque, md5_anterior, datos)
 
       pista += 1
       
-      mensaje= nr_bloque.to_s + ":"  + md5_anterior + "\n"
+      mensaje = "bloque "
+      mensaje += nr_bloque.to_s  
+      mensaje +=  ": md5 (anterior) :"  + md5_anterior + "\n"
       mensaje += datos
-      mensaje += pista.to_s
+      mensaje += "iteraciones: "
+      mensaje += pista.to_s 
+      mensaje += "\n"
 
       puts mensaje
       puts "----------------------------------"
       
       md5 << mensaje  
       rta = md5.hexdigest
-      puts "  " + rta
+      puts "  " + rta 
       
       car = rta[0]
 
       if car == 'a' 
+	      File.open("bloque/#{nr_bloque.to_s}", "w") do |f| 
+		      f.write("#{mensaje}") 
+	      end
+
 	      h = [ rta , mensaje ]
       end
      

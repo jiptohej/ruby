@@ -1,5 +1,14 @@
    require 'digest'
    
+   ############################################ ejemplo de bloque #####################################
+   # bloque 13:digest bloque anterior:ac896f1f4cbb939d8beb1ad30f8e2877984084fbc34c97de5d53697e7edcd36c
+   # 11 c
+   # 21 c
+   # 3 c
+   # 5 c
+   # iteraciones: 24
+   ############################################ fin de ejemplo de bloque ##############################
+   
    def genBlock (nr_bloque, md5_anterior, datos)
       md5 = Digest::MD5.new
       
@@ -42,6 +51,13 @@
    
       end
    end
+    
+   ############################################ ejemplo de datos  #####################################
+   # 11 c
+   # 21 c
+   # 3 c
+   # 5 c
+   ############################################ fin de ejemplo de datos# ##############################
    
    def genDatos(n=1234)
        #srand n

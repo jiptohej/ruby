@@ -1,0 +1,5 @@
+for i in $*
+do
+    echo "generar claves del usuario ${i}"
+    ruby crear_clave.rb  "${i}"
+done

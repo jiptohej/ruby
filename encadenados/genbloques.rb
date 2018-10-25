@@ -29,6 +29,7 @@
          puts mensaje
          puts "----------------------------------"
          
+         # crear un fichero con  el mensaje y de nombre bloque/#{nr_bloque} 
          File.open("bloque/#{nr_bloque.to_s}", "w") do |f| 
    		      f.write("#{mensaje}") 
    	 end
@@ -43,11 +44,7 @@
 		 h = [ md5sum.to_s, mensaje ]
          end
         
-         # crear un fichero con  el mensaje y de nombre bloque_#{nr_bloque}.blk 
-         # File.open(nombre, 'w').write mensaje
          return h  if car == 'a'
-   
-   
    
       end
    end

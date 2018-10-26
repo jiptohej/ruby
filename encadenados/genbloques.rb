@@ -1,13 +1,15 @@
+
    require 'digest'
    require 'find'
    
    ############################################ ejemplo de bloque #####################################
-   # bloque 13:digest bloque anterior:ac896f1f4cbb939d8beb1ad30f8e2877984084fbc34c97de5d53697e7edcd36c
-   # 11 c
-   # 21 c
-   # 3 c
-   # 5 c
-   # iteraciones: 24
+   # bloque: 17:anterior md5:acc9355f3f4ad7720a976923de5f3c84
+   # 24 c
+   # 9 i
+   # 6 c
+   # 24 c
+   # 2018-10-26 20:07:26 +0200
+   # iteraciones: 23
    ############################################ fin de ejemplo de bloque ##############################
    
    def genBlock (nr_bloque, md5_anterior, datos)
@@ -59,10 +61,13 @@
    end
     
    ############################################ ejemplo de datos  #####################################
-   # 11 c
-   # 21 c
-   # 3 c
-   # 5 c
+   # bloque: 17:anterior md5:acc9355f3f4ad7720a976923de5f3c84
+   # 24 c
+   # 9 i
+   # 6 c
+   # 24 c
+   # 2018-10-26 20:07:26 +0200
+   # iteraciones: 23
    ############################################ fin de ejemplo de datos# ##############################
    
    def genDatos(n=1234)
@@ -116,12 +121,8 @@
        end
    end
 
-   if __FILE__ == $0
-    # obtenerDigest
-    # obtenerMD5      
-    # return  ########################################  salida por return ##########################################
+   def genBloques(nr_bloques=1000) # número de bloques a generar en la simulación 
 
-   
       a = Array.new
       nr_bloque = 0        # número del bloque inicial
       nr_bloques = 100     # número de bloques a generar en la simulación
@@ -141,6 +142,12 @@
          bloque = genBlock(nr_bloque, md5_anterior, datos)
       end
    
-      mostrarArray a 
+   end
+
+
+   if __FILE__ == $0
+    
+    genBloques(99)
+   
    end
    

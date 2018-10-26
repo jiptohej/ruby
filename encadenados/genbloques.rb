@@ -19,10 +19,11 @@
    
          pista += 1
          
-         mensaje = "bloque "
+         mensaje = "bloque: "
          mensaje += nr_bloque.to_s  
-         mensaje +=  ":digest bloque anterior:"  + md5_anterior + "\n"
+	 mensaje +=  ":anterior md5:" + md5_anterior + "\n"
          mensaje += datos
+	 mensaje += Time.now.to_s + "\n"
          mensaje += "iteraciones: "
          mensaje += pista.to_s 
          mensaje += "\n"
@@ -30,7 +31,9 @@
          puts mensaje
          puts "----------------------------------"
          
-         # crear un fichero con  el mensaje y de nombre #{nr_bloque} 
+         # crear un fichero con  el mensaje adecuado 
+	 # y nombre #{nr_bloque}-#{md5_anterior}
+	 #
          nombre = "bloque/#{nr_bloque.to_s}-#{md5_anterior}"
          File.open(nombre, "w") do |f| 
                f.write("#{mensaje}") 
@@ -44,6 +47,10 @@
      
          if car == 'a' 
              h = [ md5sum.to_s, mensaje ]
+
+	    # renombrar el fichero 
+	    nuevo =  "bloque/" + nr_bloque.to_s + "-" + md5sum.to_s
+	    File.rename nombre, nuevo 
          end
           
          return h  if car == 'a'
@@ -80,7 +87,7 @@
           datos += nr_alumno.to_s + " " +  califica
        end
    
-       datos 
+       datos  # recordar que es un return implícito
    
    end
    
@@ -110,9 +117,9 @@
    end
 
    if __FILE__ == $0
-        # obtenerDigest
-        # obtenerMD5      
-        # return  ########################################  salida por return ##########################################
+    # obtenerDigest
+    # obtenerMD5      
+    # return  ########################################  salida por return ##########################################
 
    
       a = Array.new

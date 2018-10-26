@@ -28,11 +28,11 @@
    
          # crear un fichero con  el mensaje adecuado 
          # y nombre #{nr_bloque}-#{md5_anterior}
-	 # este nombre es temporal, en el momento 
-	 # en que el bloque esté cerrado,
-	 # cambiaremos el nombre del fichero
-	 # agregando al número de bloque el  MD5
-	 # del propio fichero.
+         # este nombre es temporal, en el momento 
+         # en que el bloque esté cerrado,
+         # cambiaremos el nombre del fichero
+         # agregando al número de bloque el  MD5
+         # del propio fichero.
          #
          nombre = "bloque/#{nr_bloque.to_s}-#{md5_anterior}"
          File.open(nombre, "w") do |f| 
@@ -46,10 +46,10 @@
          if car == 'a' 
              h = [ md5sum.to_s, mensaje ]
              # renombrar el fichero 
-	     # es interesanate que al recibir un bloque (un fichero)
-	     # tengamos en su nombre, el número de bloque del que se
-	     # trata y de su propio MD5 con el fin de realizar un
-	     # test automáticamente siempre que recibamos un bloque.
+             # es interesanate que al recibir un bloque (un fichero)
+             # tengamos en su nombre, el número de bloque del que se
+             # trata y de su propio MD5 con el fin de realizar un
+             # test automáticamente siempre que recibamos un bloque.
              nuevo =  "bloque/" + nr_bloque.to_s + "-" + md5sum.to_s
              File.rename nombre, nuevo 
          end

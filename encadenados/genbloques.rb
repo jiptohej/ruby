@@ -1,4 +1,5 @@
    require 'digest'
+   require 'find'
    
    ############################################ ejemplo de bloque #####################################
    # bloque 13:digest bloque anterior:ac896f1f4cbb939d8beb1ad30f8e2877984084fbc34c97de5d53697e7edcd36c
@@ -29,24 +30,25 @@
          puts mensaje
          puts "----------------------------------"
          
-         # crear un fichero con  el mensaje y de nombre bloque/#{nr_bloque} 
-         File.open("bloque/#{nr_bloque.to_s}", "w") do |f| 
-   		      f.write("#{mensaje}") 
-   	 end
-	 sha256 = Digest::SHA256.file "bloque/#{nr_bloque.to_s}" 
-         md5sum = sha256.hexdigest
-
-	 puts "  " + md5sum.to_s 
-         
-         car = md5sum[0]
-   
-         if car == 'a' 
-		 h = [ md5sum.to_s, mensaje ]
+         # crear un fichero con  el mensaje y de nombre #{nr_bloque} 
+         nombre = "bloque/#{nr_bloque.to_s}-#{md5_anterior}"
+         File.open(nombre, "w") do |f| 
+               f.write("#{mensaje}") 
          end
-        
+         md5 = Digest::MD5.file nombre 
+         md5sum = md5.hexdigest
+  
+         puts "  " + md5sum.to_s 
+           
+         car = md5sum[0]
+     
+         if car == 'a' 
+             h = [ md5sum.to_s, mensaje ]
+         end
+          
          return h  if car == 'a'
-   
-      end
+     
+        end
    end
     
    ############################################ ejemplo de datos  #####################################
@@ -68,9 +70,9 @@
           rta = rand()
       
           if rta < p_fallo 
-      	    califica = "i\n" 
+             califica = "i\n" 
           else
-      	    califica = "c\n" 
+             califica = "c\n" 
           end
       
           nr_alumno = rand(nr_alumnos)
@@ -91,8 +93,27 @@
        end
    end
    
-   
+   def obtenerDigest
+       Find.find('bloque') do |x| 
+          if File.file? x
+              puts Digest::SHA256.file "#{x}" 
+          end
+       end
+   end
+
+   def obtenerMD5
+       Find.find('bloque') do |x| 
+          if File.file? x
+             puts Digest::MD5.file "#{x}" 
+          end
+       end
+   end
+
    if __FILE__ == $0
+        # obtenerDigest
+        # obtenerMD5      
+        # return  ########################################  salida por return ##########################################
+
    
       a = Array.new
       nr_bloque = 0        # número del bloque inicial

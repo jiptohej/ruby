@@ -1,4 +1,3 @@
-
    require 'digest'
    require 'find'
    
@@ -14,28 +13,22 @@
    
    def genBlock (nr_bloque, md5_anterior, datos)
       md5 = Digest::MD5.new
-      
       pista = 0
-      
       loop do
    
          pista += 1
-         
          mensaje = "bloque: "
          mensaje += nr_bloque.to_s  
-	 mensaje +=  ":anterior md5:" + md5_anterior + "\n"
+         mensaje +=  ":anterior md5:" + md5_anterior + "\n"
          mensaje += datos
-	 mensaje += Time.now.to_s + "\n"
+         mensaje += Time.now.to_s + "\n"
          mensaje += "iteraciones: "
          mensaje += pista.to_s 
          mensaje += "\n"
    
-         puts mensaje
-         puts "----------------------------------"
-         
          # crear un fichero con  el mensaje adecuado 
-	 # y nombre #{nr_bloque}-#{md5_anterior}
-	 #
+         # y nombre #{nr_bloque}-#{md5_anterior}
+         #
          nombre = "bloque/#{nr_bloque.to_s}-#{md5_anterior}"
          File.open(nombre, "w") do |f| 
                f.write("#{mensaje}") 
@@ -43,16 +36,13 @@
          md5 = Digest::MD5.file nombre 
          md5sum = md5.hexdigest
   
-         puts "  " + md5sum.to_s 
-           
          car = md5sum[0]
      
          if car == 'a' 
              h = [ md5sum.to_s, mensaje ]
-
-	    # renombrar el fichero 
-	    nuevo =  "bloque/" + nr_bloque.to_s + "-" + md5sum.to_s
-	    File.rename nombre, nuevo 
+             # renombrar el fichero 
+             nuevo =  "bloque/" + nr_bloque.to_s + "-" + md5sum.to_s
+             File.rename nombre, nuevo 
          end
           
          return h  if car == 'a'
@@ -77,7 +67,6 @@
        p_fallo   = 0.25
    
        datos = ""
-   
        (1..4).each do 
           rta = rand()
       
@@ -86,14 +75,10 @@
           else
              califica = "c\n" 
           end
-      
           nr_alumno = rand(nr_alumnos)
-      
           datos += nr_alumno.to_s + " " +  califica
        end
-   
        datos  # recordar que es un return implícito
-   
    end
    
    def mostrarArray (a)
@@ -122,7 +107,6 @@
    end
 
    def genBloques(nr_bloques=1000) # número de bloques a generar en la simulación 
-
       a = Array.new
       nr_bloque = 0        # número del bloque inicial
       nr_bloques = 100     # número de bloques a generar en la simulación
@@ -141,13 +125,9 @@
          datos = genDatos()
          bloque = genBlock(nr_bloque, md5_anterior, datos)
       end
-   
    end
 
-
    if __FILE__ == $0
-    
     genBloques(99)
-   
    end
    

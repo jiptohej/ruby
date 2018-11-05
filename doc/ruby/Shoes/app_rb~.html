@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>app.rb~ - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../README_md.html">README</a>
+  
+    <li><a href="../../arrays/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../cadenas/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../conta/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../dir/alfa.html">alfa</a>
+  
+    <li><a href="../../dir/beta.html">beta</a>
+  
+    <li><a href="../../dir/delta.html">delta</a>
+  
+    <li><a href="../../dir/gamma.html">gamma</a>
+  
+    <li><a href="../../directorios/data1.html">data1</a>
+  
+    <li><a href="../../directorios/data2.html">data2</a>
+  
+    <li><a href="../../directorios/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ejemplos/#tabla_rb#.html">#tabla.rb#</a>
+  
+    <li><a href="../../ejemplos/borrar.html">borrar</a>
+  
+    <li><a href="../../ejemplos/case01.html">case01</a>
+  
+    <li><a href="../../ejemplos/datos_txt.html">datos</a>
+  
+    <li><a href="../../ejemplos/fact50000_txt.html">fact50000</a>
+  
+    <li><a href="../../ejemplos/for01.html">for01</a>
+  
+    <li><a href="../../ejemplos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ejemplos/hola.html">hola</a>
+  
+    <li><a href="../../ejemplos/lista_txt.html">lista</a>
+  
+    <li><a href="../../ejemplos/naturales_txt.html">naturales</a>
+  
+    <li><a href="../../ejemplos/parejas_txt.html">parejas</a>
+  
+    <li><a href="../../ejemplos/productos_txt.html">productos</a>
+  
+    <li><a href="../../ejemplos/proyectos_txt.html">proyectos</a>
+  
+    <li><a href="../../ejemplos/repl.html">repl</a>
+  
+    <li><a href="../../encadenados/bloque/0-ac6444df80f6557b6651617eede8ce06.html">0-ac6444df80f6557b6651617eede8ce06</a>
+  
+    <li><a href="../../encadenados/bloque/1-af647b21e94fe49ba0123693dac8336f.html">1-af647b21e94fe49ba0123693dac8336f</a>
+  
+    <li><a href="../../encadenados/bloque/10-a37c54e2e5e3f0661fd9a1c93e5dfac6.html">10-a37c54e2e5e3f0661fd9a1c93e5dfac6</a>
+  
+    <li><a href="../../encadenados/bloque/100-ade39e1970b64d44d713460406d7a244.html">100-ade39e1970b64d44d713460406d7a244</a>
+  
+    <li><a href="../../encadenados/bloque/11-a6433a6eb9169ee68e842846be840579.html">11-a6433a6eb9169ee68e842846be840579</a>
+  
+    <li><a href="../../encadenados/bloque/12-a23105f67653e269d0f763d8f68e2cec.html">12-a23105f67653e269d0f763d8f68e2cec</a>
+  
+    <li><a href="../../encadenados/bloque/13-a7b0e3d6abea5c8c72f297eb1e76c095.html">13-a7b0e3d6abea5c8c72f297eb1e76c095</a>
+  
+    <li><a href="../../encadenados/bloque/14-a42cee0b161adec27f79bc982edf4059.html">14-a42cee0b161adec27f79bc982edf4059</a>
+  
+    <li><a href="../../encadenados/bloque/15-ac24fc3d9d6625c60880688d2a2cf02c.html">15-ac24fc3d9d6625c60880688d2a2cf02c</a>
+  
+    <li><a href="../../encadenados/bloque/16-a7aedc3128ede59af094f77f8612baa6.html">16-a7aedc3128ede59af094f77f8612baa6</a>
+  
+    <li><a href="../../encadenados/bloque/17-a3dca99b55cd3d844e22139ac53bfc1c.html">17-a3dca99b55cd3d844e22139ac53bfc1c</a>
+  
+    <li><a href="../../encadenados/bloque/18-a8ceb5dddf20f049855810c9d3840f4b.html">18-a8ceb5dddf20f049855810c9d3840f4b</a>
+  
+    <li><a href="../../encadenados/bloque/19-a212f15c4e74911bb078534167ad308c.html">19-a212f15c4e74911bb078534167ad308c</a>
+  
+    <li><a href="../../encadenados/bloque/2-aa20ef1109beff1b8e84551c6f855240.html">2-aa20ef1109beff1b8e84551c6f855240</a>
+  
+    <li><a href="../../encadenados/bloque/20-a70d999fe27747cb00cce9eb6c74e41b.html">20-a70d999fe27747cb00cce9eb6c74e41b</a>
+  
+    <li><a href="../../encadenados/bloque/21-aff0fd4242e9d6691ea0910fc3b770e0.html">21-aff0fd4242e9d6691ea0910fc3b770e0</a>
+  
+    <li><a href="../../encadenados/bloque/22-a54709d2f22cd7240f5b379a28dd2086.html">22-a54709d2f22cd7240f5b379a28dd2086</a>
+  
+    <li><a href="../../encadenados/bloque/23-a009eb8f121c12a984e38fcf24a2f453.html">23-a009eb8f121c12a984e38fcf24a2f453</a>
+  
+    <li><a href="../../encadenados/bloque/24-a781339eec608c54729b1f24469c7d47.html">24-a781339eec608c54729b1f24469c7d47</a>
+  
+    <li><a href="../../encadenados/bloque/25-ad0053ddd4a7c55358c8d5de0a8e7ddb.html">25-ad0053ddd4a7c55358c8d5de0a8e7ddb</a>
+  
+    <li><a href="../../encadenados/bloque/26-acb8eb091a397e4d23c3cc91eefcac7a.html">26-acb8eb091a397e4d23c3cc91eefcac7a</a>
+  
+    <li><a href="../../encadenados/bloque/27-a4ed50c06a209ebac08a36aac862173e.html">27-a4ed50c06a209ebac08a36aac862173e</a>
+  
+    <li><a href="../../encadenados/bloque/28-aa1d5a3f9f81c76c927f651539b68257.html">28-aa1d5a3f9f81c76c927f651539b68257</a>
+  
+    <li><a href="../../encadenados/bloque/29-a4d4939f8dc4d1f08af260e893a5743f.html">29-a4d4939f8dc4d1f08af260e893a5743f</a>
+  
+    <li><a href="../../encadenados/bloque/3-af693aa50339cbe272f941e3d43b33c8.html">3-af693aa50339cbe272f941e3d43b33c8</a>
+  
+    <li><a href="../../encadenados/bloque/30-a6e6b9a86945fdc6e956d14cc3c96ecb.html">30-a6e6b9a86945fdc6e956d14cc3c96ecb</a>
+  
+    <li><a href="../../encadenados/bloque/31-a8685f26547b80bcc48cacb5d0b3067c.html">31-a8685f26547b80bcc48cacb5d0b3067c</a>
+  
+    <li><a href="../../encadenados/bloque/32-abe4ea934940ba17036fc630605cca34.html">32-abe4ea934940ba17036fc630605cca34</a>
+  
+    <li><a href="../../encadenados/bloque/33-a660d988304f44f16b8b8b60474261ac.html">33-a660d988304f44f16b8b8b60474261ac</a>
+  
+    <li><a href="../../encadenados/bloque/34-a85dc4051d79edbce9a854290a972101.html">34-a85dc4051d79edbce9a854290a972101</a>
+  
+    <li><a href="../../encadenados/bloque/35-aaa29fa6fa6cf3cff8a86533783aa92f.html">35-aaa29fa6fa6cf3cff8a86533783aa92f</a>
+  
+    <li><a href="../../encadenados/bloque/36-a0cb99ea7735b13ceaba3bdcbb772768.html">36-a0cb99ea7735b13ceaba3bdcbb772768</a>
+  
+    <li><a href="../../encadenados/bloque/37-a190ef9ad0dce88f83997d28e671421c.html">37-a190ef9ad0dce88f83997d28e671421c</a>
+  
+    <li><a href="../../encadenados/bloque/38-aa13f9c7c43a26a9077497eacc7821ba.html">38-aa13f9c7c43a26a9077497eacc7821ba</a>
+  
+    <li><a href="../../encadenados/bloque/39-a9f7e767332893c36e301ef712175f8b.html">39-a9f7e767332893c36e301ef712175f8b</a>
+  
+    <li><a href="../../encadenados/bloque/4-ac6aa668ae063f3f48ebdede9063673d.html">4-ac6aa668ae063f3f48ebdede9063673d</a>
+  
+    <li><a href="../../encadenados/bloque/40-a78b5bc6e17d5cfb2ef67776b7aeced3.html">40-a78b5bc6e17d5cfb2ef67776b7aeced3</a>
+  
+    <li><a href="../../encadenados/bloque/41-a6f7267aa00a0ee91ed0c61623604141.html">41-a6f7267aa00a0ee91ed0c61623604141</a>
+  
+    <li><a href="../../encadenados/bloque/42-a91c58c7a50d071a895eedba164b8515.html">42-a91c58c7a50d071a895eedba164b8515</a>
+  
+    <li><a href="../../encadenados/bloque/43-a4cdffcac5e6bf9989d9ab3eb62a5f49.html">43-a4cdffcac5e6bf9989d9ab3eb62a5f49</a>
+  
+    <li><a href="../../encadenados/bloque/44-ac4e7978689f2ef3236544c76d1e18e6.html">44-ac4e7978689f2ef3236544c76d1e18e6</a>
+  
+    <li><a href="../../encadenados/bloque/45-abea35179d056584a2e04d064e0f1c1d.html">45-abea35179d056584a2e04d064e0f1c1d</a>
+  
+    <li><a href="../../encadenados/bloque/46-ab2947983111df60f3bc968b2939af41.html">46-ab2947983111df60f3bc968b2939af41</a>
+  
+    <li><a href="../../encadenados/bloque/47-ac0349f7b70fa7f66fbd643fed37ce40.html">47-ac0349f7b70fa7f66fbd643fed37ce40</a>
+  
+    <li><a href="../../encadenados/bloque/48-ad6963270ba27e2de63e35142c1efe73.html">48-ad6963270ba27e2de63e35142c1efe73</a>
+  
+    <li><a href="../../encadenados/bloque/49-aa70fc7d0e1eda95d7b8db733be9923e.html">49-aa70fc7d0e1eda95d7b8db733be9923e</a>
+  
+    <li><a href="../../encadenados/bloque/5-ab135a0477267f5ca7c46fdda670438c.html">5-ab135a0477267f5ca7c46fdda670438c</a>
+  
+    <li><a href="../../encadenados/bloque/50-af945ba952d6e308996235100b28cfb2.html">50-af945ba952d6e308996235100b28cfb2</a>
+  
+    <li><a href="../../encadenados/bloque/51-af60210d8f55b3cefa9569effa00a1b9.html">51-af60210d8f55b3cefa9569effa00a1b9</a>
+  
+    <li><a href="../../encadenados/bloque/52-a734ad9025098b75c252931c5a5dde1d.html">52-a734ad9025098b75c252931c5a5dde1d</a>
+  
+    <li><a href="../../encadenados/bloque/53-a7ac50e60c7e0675d2f419df428787b2.html">53-a7ac50e60c7e0675d2f419df428787b2</a>
+  
+    <li><a href="../../encadenados/bloque/54-ad0608fe0de173be38c1397256d1254c.html">54-ad0608fe0de173be38c1397256d1254c</a>
+  
+    <li><a href="../../encadenados/bloque/55-afcca9dfa5c70c3f7cb5b25efb302fb3.html">55-afcca9dfa5c70c3f7cb5b25efb302fb3</a>
+  
+    <li><a href="../../encadenados/bloque/56-acde9b3b496fd2a411dc76366026eb25.html">56-acde9b3b496fd2a411dc76366026eb25</a>
+  
+    <li><a href="../../encadenados/bloque/57-a68dc6786e449ce08bb39219d3ddd897.html">57-a68dc6786e449ce08bb39219d3ddd897</a>
+  
+    <li><a href="../../encadenados/bloque/58-abf01d6691825822d4152b4a405c82d7.html">58-abf01d6691825822d4152b4a405c82d7</a>
+  
+    <li><a href="../../encadenados/bloque/59-a4b91dd07eac833e5a6f74c50dbc8138.html">59-a4b91dd07eac833e5a6f74c50dbc8138</a>
+  
+    <li><a href="../../encadenados/bloque/6-a410c952eba25a763daed0186391cdeb.html">6-a410c952eba25a763daed0186391cdeb</a>
+  
+    <li><a href="../../encadenados/bloque/60-acf941d1abcf166c1d8bc77dd13b027e.html">60-acf941d1abcf166c1d8bc77dd13b027e</a>
+  
+    <li><a href="../../encadenados/bloque/61-a8f5ee86f846708afb61a6c3cc4174d8.html">61-a8f5ee86f846708afb61a6c3cc4174d8</a>
+  
+    <li><a href="../../encadenados/bloque/62-a3adb49e375a01f9c026a8a7fb060a34.html">62-a3adb49e375a01f9c026a8a7fb060a34</a>
+  
+    <li><a href="../../encadenados/bloque/63-ade88ea0ffdc70f995823ee1d89c4296.html">63-ade88ea0ffdc70f995823ee1d89c4296</a>
+  
+    <li><a href="../../encadenados/bloque/64-aad3f14ee22d37950bf9871272a2282c.html">64-aad3f14ee22d37950bf9871272a2282c</a>
+  
+    <li><a href="../../encadenados/bloque/65-a628bca965356ca362d9d22677b41c10.html">65-a628bca965356ca362d9d22677b41c10</a>
+  
+    <li><a href="../../encadenados/bloque/66-a0b2c5673c3460414bf21934d74cff6c.html">66-a0b2c5673c3460414bf21934d74cff6c</a>
+  
+    <li><a href="../../encadenados/bloque/67-a249f509c278322bc559500f5556b74e.html">67-a249f509c278322bc559500f5556b74e</a>
+  
+    <li><a href="../../encadenados/bloque/68-af64e24b50ff2ff710605abdfe2a863e.html">68-af64e24b50ff2ff710605abdfe2a863e</a>
+  
+    <li><a href="../../encadenados/bloque/69-a53dd8ec878dbc2652defeb94463132e.html">69-a53dd8ec878dbc2652defeb94463132e</a>
+  
+    <li><a href="../../encadenados/bloque/7-a569dc9f3d43d11e96cfeba6a1418670.html">7-a569dc9f3d43d11e96cfeba6a1418670</a>
+  
+    <li><a href="../../encadenados/bloque/70-a7083b18189246c58b76ff957cb1607d.html">70-a7083b18189246c58b76ff957cb1607d</a>
+  
+    <li><a href="../../encadenados/bloque/71-a2e0433f0480dea9b41ee59906e8ac90.html">71-a2e0433f0480dea9b41ee59906e8ac90</a>
+  
+    <li><a href="../../encadenados/bloque/72-a423f6ef98525ee638dd22e3717ce3f9.html">72-a423f6ef98525ee638dd22e3717ce3f9</a>
+  
+    <li><a href="../../encadenados/bloque/73-a4133171294ea3887bf23296419fa6f6.html">73-a4133171294ea3887bf23296419fa6f6</a>
+  
+    <li><a href="../../encadenados/bloque/74-a5bbcc6a274f68123a80d69dc80b0a1f.html">74-a5bbcc6a274f68123a80d69dc80b0a1f</a>
+  
+    <li><a href="../../encadenados/bloque/75-a22e4644e4d315d9f530de594306feb5.html">75-a22e4644e4d315d9f530de594306feb5</a>
+  
+    <li><a href="../../encadenados/bloque/76-a76d6573066b98d5b7044ec3f78d78b2.html">76-a76d6573066b98d5b7044ec3f78d78b2</a>
+  
+    <li><a href="../../encadenados/bloque/77-aaf42c6a20e2799f55005c5bb095ff3e.html">77-aaf42c6a20e2799f55005c5bb095ff3e</a>
+  
+    <li><a href="../../encadenados/bloque/78-a6794d19e75a08ada48f9fdc96fdd744.html">78-a6794d19e75a08ada48f9fdc96fdd744</a>
+  
+    <li><a href="../../encadenados/bloque/79-add43eb2901c13fb36f53d369407ce97.html">79-add43eb2901c13fb36f53d369407ce97</a>
+  
+    <li><a href="../../encadenados/bloque/8-a2e9deb629c25b7e32f7c53225cb4d47.html">8-a2e9deb629c25b7e32f7c53225cb4d47</a>
+  
+    <li><a href="../../encadenados/bloque/80-ac10c15b17b055c14c0562d29d823b42.html">80-ac10c15b17b055c14c0562d29d823b42</a>
+  
+    <li><a href="../../encadenados/bloque/81-a05fbf1c1068b0803f51ab387a368910.html">81-a05fbf1c1068b0803f51ab387a368910</a>
+  
+    <li><a href="../../encadenados/bloque/82-ad7cca119d52e4f237f76dfea7eb0ea9.html">82-ad7cca119d52e4f237f76dfea7eb0ea9</a>
+  
+    <li><a href="../../encadenados/bloque/83-a5b9ec970142483efc1638027c0689ce.html">83-a5b9ec970142483efc1638027c0689ce</a>
+  
+    <li><a href="../../encadenados/bloque/84-a24275d56af6a5f78ff4d2a726f5584f.html">84-a24275d56af6a5f78ff4d2a726f5584f</a>
+  
+    <li><a href="../../encadenados/bloque/85-ad760040d0d992fd9ba1f00e7181434f.html">85-ad760040d0d992fd9ba1f00e7181434f</a>
+  
+    <li><a href="../../encadenados/bloque/86-a22b7dae326999e9807ef121ade90cca.html">86-a22b7dae326999e9807ef121ade90cca</a>
+  
+    <li><a href="../../encadenados/bloque/87-a5c95ee6e321fe8b4cea1e1f1ee8c523.html">87-a5c95ee6e321fe8b4cea1e1f1ee8c523</a>
+  
+    <li><a href="../../encadenados/bloque/88-af132b2cbe54ae4a00e84a0531ae7801.html">88-af132b2cbe54ae4a00e84a0531ae7801</a>
+  
+    <li><a href="../../encadenados/bloque/89-a74e7db3584e0c3a7edd3d6160ebc26f.html">89-a74e7db3584e0c3a7edd3d6160ebc26f</a>
+  
+    <li><a href="../../encadenados/bloque/9-a8e89c4e1792cd353c44d6b98a4a9d0e.html">9-a8e89c4e1792cd353c44d6b98a4a9d0e</a>
+  
+    <li><a href="../../encadenados/bloque/90-a5e8129d5b1f6d072c6c3a7d9eefce69.html">90-a5e8129d5b1f6d072c6c3a7d9eefce69</a>
+  
+    <li><a href="../../encadenados/bloque/91-ad24512e30dbe08a8f6428f4402e4df7.html">91-ad24512e30dbe08a8f6428f4402e4df7</a>
+  
+    <li><a href="../../encadenados/bloque/92-aca5adcf0d7dc95b0a49893ed16e66a5.html">92-aca5adcf0d7dc95b0a49893ed16e66a5</a>
+  
+    <li><a href="../../encadenados/bloque/93-a97bbc1365e415e0833f578830aea7b0.html">93-a97bbc1365e415e0833f578830aea7b0</a>
+  
+    <li><a href="../../encadenados/bloque/94-aba043d42aa266cc4fe02b6849f56173.html">94-aba043d42aa266cc4fe02b6849f56173</a>
+  
+    <li><a href="../../encadenados/bloque/95-a79880b2f5a0079b6c393e91476fcc9e.html">95-a79880b2f5a0079b6c393e91476fcc9e</a>
+  
+    <li><a href="../../encadenados/bloque/96-ad4ea8ff46d3fc0890e0d1dc586700f7.html">96-ad4ea8ff46d3fc0890e0d1dc586700f7</a>
+  
+    <li><a href="../../encadenados/bloque/97-aded5f322a528d2dc6ff8b7ea7576d9e.html">97-aded5f322a528d2dc6ff8b7ea7576d9e</a>
+  
+    <li><a href="../../encadenados/bloque/98-a10b60a5b562b8402c5078b5c7b13052.html">98-a10b60a5b562b8402c5078b5c7b13052</a>
+  
+    <li><a href="../../encadenados/bloque/99-ad908fe445d81b2323fd83c71b2dbc7b.html">99-ad908fe445d81b2323fd83c71b2dbc7b</a>
+  
+    <li><a href="../../encadenados/digest.html">digest</a>
+  
+    <li><a href="../../encadenados/genbloques.html">genbloques</a>
+  
+    <li><a href="../../ficheros/1000_ord.html">1000.ord</a>
+  
+    <li><a href="../../ficheros/1000_txt.html">1000</a>
+  
+    <li><a href="../../ficheros/bitacora_oro.html">bitacora.oro</a>
+  
+    <li><a href="../../ficheros/bitacora_txt.html">bitacora</a>
+  
+    <li><a href="../../ficheros/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ficheros/numeros_aleatorios_txt.html">numeros_aleatorios</a>
+  
+    <li><a href="../../identidad/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../intérprete/alfa_txt.html">alfa</a>
+  
+    <li><a href="../../keys/genclaves.html">genclaves</a>
+  
+    <li><a href="../../keys/jlt-public_key.html">jlt-public.key</a>
+  
+    <li><a href="../../keys/jlt_csr.html">jlt.csr</a>
+  
+    <li><a href="../../keys/jlt_key.html">jlt.key</a>
+  
+    <li><a href="../../keys/private/alfa_key.html">alfa.key</a>
+  
+    <li><a href="../../keys/private/beta_key.html">beta.key</a>
+  
+    <li><a href="../../keys/private/delta_key.html">delta.key</a>
+  
+    <li><a href="../../keys/private/gamma_key.html">gamma.key</a>
+  
+    <li><a href="../../keys/private/omega_key.html">omega.key</a>
+  
+    <li><a href="../../keys/public/alfa-public_key.html">alfa-public.key</a>
+  
+    <li><a href="../../keys/public/beta-public_key.html">beta-public.key</a>
+  
+    <li><a href="../../keys/public/delta-public_key.html">delta-public.key</a>
+  
+    <li><a href="../../keys/public/gamma-public_key.html">gamma-public.key</a>
+  
+    <li><a href="../../keys/public/omega-public_key.html">omega-public.key</a>
+  
+    <li><a href="../../objetos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../pi/digitos_sh.html">digitos.sh</a>
+  
+    <li><a href="../../proy1/ex2012ene.html">ex2012ene</a>
+  
+    <li><a href="../../proy2/ej.html">ej</a>
+  
+    <li><a href="../../raw/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/Russ_Olsen/Encrypter_rb~.html">Encrypter.rb~</a>
+  
+    <li><a href="../../ruby/Russ_Olsen/documento_txt.html">documento</a>
+  
+    <li><a href="../../ruby/Russ_Olsen/documento_txt~.html">documento.txt~</a>
+  
+    <li><a href="../../ruby/Shoes/#edit_rb#.html">#edit.rb#</a>
+  
+    <li><a href="../../ruby/Shoes/app_rb~.html">app.rb~</a>
+  
+    <li><a href="../../ruby/Shoes/estilos_rb~.html">estilos.rb~</a>
+  
+    <li><a href="../../ruby/Shoes/reconocimientos.html">reconocimientos</a>
+  
+    <li><a href="../../ruby/Time/time_rkt.html">time.rkt</a>
+  
+    <li><a href="../../ruby/anfitrion/Anfitrion_rb~.html">Anfitrion.rb~</a>
+  
+    <li><a href="../../ruby/animales/animales_rb~.html">animales.rb~</a>
+  
+    <li><a href="../../ruby/arrays/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/cadenas/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/conta/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/directorios/data1.html">data1</a>
+  
+    <li><a href="../../ruby/directorios/data2.html">data2</a>
+  
+    <li><a href="../../ruby/directorios/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/ejemplos/#tabla_rb#.html">#tabla.rb#</a>
+  
+    <li><a href="../../ruby/ejemplos/borrar.html">borrar</a>
+  
+    <li><a href="../../ruby/ejemplos/case01.html">case01</a>
+  
+    <li><a href="../../ruby/ejemplos/datos_txt.html">datos</a>
+  
+    <li><a href="../../ruby/ejemplos/fact50000_txt.html">fact50000</a>
+  
+    <li><a href="../../ruby/ejemplos/for01.html">for01</a>
+  
+    <li><a href="../../ruby/ejemplos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/ejemplos/hola.html">hola</a>
+  
+    <li><a href="../../ruby/ejemplos/lista_txt.html">lista</a>
+  
+    <li><a href="../../ruby/ejemplos/naturales_txt.html">naturales</a>
+  
+    <li><a href="../../ruby/ejemplos/parejas_txt.html">parejas</a>
+  
+    <li><a href="../../ruby/ejemplos/productos_txt.html">productos</a>
+  
+    <li><a href="../../ruby/ejemplos/proyectos_txt.html">proyectos</a>
+  
+    <li><a href="../../ruby/ejemplos/repl.html">repl</a>
+  
+    <li><a href="../../ruby/entradas/io_rb~.html">io.rb~</a>
+  
+    <li><a href="../../ruby/entradas/resultados_txt.html">resultados</a>
+  
+    <li><a href="../../ruby/estadística/estad_txt.html">estad</a>
+  
+    <li><a href="../../ruby/ficheros/1000_ord.html">1000.ord</a>
+  
+    <li><a href="../../ruby/ficheros/1000_txt.html">1000</a>
+  
+    <li><a href="../../ruby/ficheros/bitacora_oro.html">bitacora.oro</a>
+  
+    <li><a href="../../ruby/ficheros/bitacora_txt.html">bitacora</a>
+  
+    <li><a href="../../ruby/ficheros/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/ficheros/numeros_aleatorios_txt.html">numeros_aleatorios</a>
+  
+    <li><a href="../../ruby/identidad/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/objetos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/raw/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../ruby/tk/salidas_txt.html">salidas</a>
+  
+    <li><a href="../../word_count/Time/time_rkt.html">time.rkt</a>
+  
+    <li><a href="../../word_count/Time/time_rkt~.html">time.rkt~</a>
+  
+    <li><a href="../../word_count/arrays/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/cadenas/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/conta/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/directorios/data1.html">data1</a>
+  
+    <li><a href="../../word_count/directorios/data2.html">data2</a>
+  
+    <li><a href="../../word_count/directorios/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ejemplos/#tabla_rb#.html">#tabla.rb#</a>
+  
+    <li><a href="../../word_count/ejemplos/borrar.html">borrar</a>
+  
+    <li><a href="../../word_count/ejemplos/case01.html">case01</a>
+  
+    <li><a href="../../word_count/ejemplos/datos_txt.html">datos</a>
+  
+    <li><a href="../../word_count/ejemplos/fact50000_txt.html">fact50000</a>
+  
+    <li><a href="../../word_count/ejemplos/for01.html">for01</a>
+  
+    <li><a href="../../word_count/ejemplos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ejemplos/hola.html">hola</a>
+  
+    <li><a href="../../word_count/ejemplos/lista_txt.html">lista</a>
+  
+    <li><a href="../../word_count/ejemplos/naturales_txt.html">naturales</a>
+  
+    <li><a href="../../word_count/ejemplos/parejas_txt.html">parejas</a>
+  
+    <li><a href="../../word_count/ejemplos/productos_txt.html">productos</a>
+  
+    <li><a href="../../word_count/ejemplos/proyectos_txt.html">proyectos</a>
+  
+    <li><a href="../../word_count/ejemplos/repl.html">repl</a>
+  
+    <li><a href="../../word_count/ficheros/1000_ord.html">1000.ord</a>
+  
+    <li><a href="../../word_count/ficheros/1000_txt.html">1000</a>
+  
+    <li><a href="../../word_count/ficheros/bitacora_oro.html">bitacora.oro</a>
+  
+    <li><a href="../../word_count/ficheros/bitacora_txt.html">bitacora</a>
+  
+    <li><a href="../../word_count/ficheros/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ficheros/numeros_aleatorios_txt.html">numeros_aleatorios</a>
+  
+    <li><a href="../../word_count/identidad/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/intérprete/alfa_txt.html">alfa</a>
+  
+    <li><a href="../../word_count/objetos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/pi/digitos_sh.html">digitos.sh</a>
+  
+    <li><a href="../../word_count/proy1/ex2012ene.html">ex2012ene</a>
+  
+    <li><a href="../../word_count/proy2/ej.html">ej</a>
+  
+    <li><a href="../../word_count/raw/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/Russ_Olsen/Encrypter_rb~.html">Encrypter.rb~</a>
+  
+    <li><a href="../../word_count/ruby/Russ_Olsen/documento_txt.html">documento</a>
+  
+    <li><a href="../../word_count/ruby/Russ_Olsen/documento_txt~.html">documento.txt~</a>
+  
+    <li><a href="../../word_count/ruby/Shoes/#edit_rb#.html">#edit.rb#</a>
+  
+    <li><a href="../../word_count/ruby/Shoes/app_rb~.html">app.rb~</a>
+  
+    <li><a href="../../word_count/ruby/Shoes/estilos_rb~.html">estilos.rb~</a>
+  
+    <li><a href="../../word_count/ruby/Shoes/reconocimientos.html">reconocimientos</a>
+  
+    <li><a href="../../word_count/ruby/Time/time_rkt.html">time.rkt</a>
+  
+    <li><a href="../../word_count/ruby/anfitrion/Anfitrion_rb~.html">Anfitrion.rb~</a>
+  
+    <li><a href="../../word_count/ruby/animales/animales_rb~.html">animales.rb~</a>
+  
+    <li><a href="../../word_count/ruby/arrays/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/cadenas/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/conta/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/directorios/data1.html">data1</a>
+  
+    <li><a href="../../word_count/ruby/directorios/data2.html">data2</a>
+  
+    <li><a href="../../word_count/ruby/directorios/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/#tabla_rb#.html">#tabla.rb#</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/borrar.html">borrar</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/case01.html">case01</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/datos_txt.html">datos</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/fact50000_txt.html">fact50000</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/for01.html">for01</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/hola.html">hola</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/lista_txt.html">lista</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/naturales_txt.html">naturales</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/parejas_txt.html">parejas</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/productos_txt.html">productos</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/proyectos_txt.html">proyectos</a>
+  
+    <li><a href="../../word_count/ruby/ejemplos/repl.html">repl</a>
+  
+    <li><a href="../../word_count/ruby/entradas/io_rb~.html">io.rb~</a>
+  
+    <li><a href="../../word_count/ruby/entradas/resultados_txt.html">resultados</a>
+  
+    <li><a href="../../word_count/ruby/estadística/estad_txt.html">estad</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/1000_ord.html">1000.ord</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/1000_txt.html">1000</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/bitacora_oro.html">bitacora.oro</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/bitacora_txt.html">bitacora</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/ficheros/numeros_aleatorios_txt.html">numeros_aleatorios</a>
+  
+    <li><a href="../../word_count/ruby/identidad/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/objetos/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/raw/geany_run_script_bat.html">geany_run_script.bat</a>
+  
+    <li><a href="../../word_count/ruby/tk/salidas_txt.html">salidas</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page ruby/Shoes/app.rb~">
+
+<p>Shoes.app :title =&gt; “White Circle”, :width =&gt; 200, :height =&gt; 200,
+:resizable =&gt;false do</p>
+
+<pre>     background black
+     fill white
+    oval :top =&gt; 20, :left =&gt; 20, :radius =&gt; 160
+end</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

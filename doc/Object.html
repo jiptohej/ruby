@@ -1,0 +1,3271 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="Math.html">Math</a>
+  
+  
+  
+    <li><span class="include">Curses</span>
+  
+  
+  
+    <li><span class="include">Fox</span>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-aledado">#aledado</a>
+    
+    <li ><a href="#method-i-area_cuadrado">#area_cuadrado</a>
+    
+    <li ><a href="#method-i-area_rect-C3-A1ngulo">#area_rectángulo</a>
+    
+    <li ><a href="#method-i-arrays_ej_1">#arrays_ej_1</a>
+    
+    <li ><a href="#method-i-bis">#bis</a>
+    
+    <li ><a href="#method-i-bisiesto">#bisiesto</a>
+    
+    <li ><a href="#method-i-biss">#biss</a>
+    
+    <li ><a href="#method-i-busy">#busy</a>
+    
+    <li ><a href="#method-i-calculate">#calculate</a>
+    
+    <li ><a href="#method-i-cat_fichero">#cat_fichero</a>
+    
+    <li ><a href="#method-i-confirmacion">#confirmacion</a>
+    
+    <li ><a href="#method-i-contrase-C3-B1a">#contraseña</a>
+    
+    <li ><a href="#method-i-copiar_linea_a_linea">#copiar_linea_a_linea</a>
+    
+    <li ><a href="#method-i-create_tree">#create_tree</a>
+    
+    <li ><a href="#method-i-digitos">#digitos</a>
+    
+    <li ><a href="#method-i-dir">#dir</a>
+    
+    <li ><a href="#method-i-ej_Familia_Torre">#ej_Familia_Torre</a>
+    
+    <li ><a href="#method-i-ejemplo">#ejemplo</a>
+    
+    <li ><a href="#method-i-espera_intro">#espera_intro</a>
+    
+    <li ><a href="#method-i-fact">#fact</a>
+    
+    <li ><a href="#method-i-factorial">#factorial</a>
+    
+    <li ><a href="#method-i-fibo">#fibo</a>
+    
+    <li ><a href="#method-i-foo">#foo</a>
+    
+    <li ><a href="#method-i-genBlock">#genBlock</a>
+    
+    <li ><a href="#method-i-genBloques">#genBloques</a>
+    
+    <li ><a href="#method-i-genDatos">#genDatos</a>
+    
+    <li ><a href="#method-i-genera_1000_enteros">#genera_1000_enteros</a>
+    
+    <li ><a href="#method-i-iniciar_array">#iniciar_array</a>
+    
+    <li ><a href="#method-i-iniciar_contadores">#iniciar_contadores</a>
+    
+    <li ><a href="#method-i-leer_coordenadas">#leer_coordenadas</a>
+    
+    <li ><a href="#method-i-listar_ascii">#listar_ascii</a>
+    
+    <li ><a href="#method-i-llamar_a_bloque">#llamar_a_bloque</a>
+    
+    <li ><a href="#method-i-llamar_con_argumentos">#llamar_con_argumentos</a>
+    
+    <li ><a href="#method-i-main">#main</a>
+    
+    <li ><a href="#method-i-make_it_quack">#make_it_quack</a>
+    
+    <li ><a href="#method-i-make_it_swim">#make_it_swim</a>
+    
+    <li ><a href="#method-i-mat_contra">#mat_contra</a>
+    
+    <li ><a href="#method-i-mat_prod">#mat_prod</a>
+    
+    <li ><a href="#method-i-mat_unidad">#mat_unidad</a>
+    
+    <li ><a href="#method-i-matriz">#matriz</a>
+    
+    <li ><a href="#method-i-mean">#mean</a>
+    
+    <li ><a href="#method-i-media">#media</a>
+    
+    <li ><a href="#method-i-mediana">#mediana</a>
+    
+    <li ><a href="#method-i-minimo">#minimo</a>
+    
+    <li ><a href="#method-i-moda">#moda</a>
+    
+    <li ><a href="#method-i-mostrar">#mostrar</a>
+    
+    <li ><a href="#method-i-mostrarArray">#mostrarArray</a>
+    
+    <li ><a href="#method-i-mostrar_fichero">#mostrar_fichero</a>
+    
+    <li ><a href="#method-i-mtd">#mtd</a>
+    
+    <li ><a href="#method-i-mulmat">#mulmat</a>
+    
+    <li ><a href="#method-i-mult100">#mult100</a>
+    
+    <li ><a href="#method-i-mult4">#mult4</a>
+    
+    <li ><a href="#method-i-mult400">#mult400</a>
+    
+    <li ><a href="#method-i-multiplicar">#multiplicar</a>
+    
+    <li ><a href="#method-i-multn">#multn</a>
+    
+    <li ><a href="#method-i-naturales">#naturales</a>
+    
+    <li ><a href="#method-i-nover_fichero">#nover_fichero</a>
+    
+    <li ><a href="#method-i-num_cifras">#num_cifras</a>
+    
+    <li ><a href="#method-i-obtenerDigest">#obtenerDigest</a>
+    
+    <li ><a href="#method-i-obtenerMD5">#obtenerMD5</a>
+    
+    <li ><a href="#method-i-obtener_vector_cifras">#obtener_vector_cifras</a>
+    
+    <li ><a href="#method-i-pedir_codigo_producto">#pedir_codigo_producto</a>
+    
+    <li ><a href="#method-i-pedir_datos_iniciales">#pedir_datos_iniciales</a>
+    
+    <li ><a href="#method-i-pedir_precio_producto">#pedir_precio_producto</a>
+    
+    <li ><a href="#method-i-pedir_unidades_producto">#pedir_unidades_producto</a>
+    
+    <li ><a href="#method-i-pedir_vector">#pedir_vector</a>
+    
+    <li ><a href="#method-i-permisos">#permisos</a>
+    
+    <li ><a href="#method-i-price_books">#price_books</a>
+    
+    <li ><a href="#method-i-random_word">#random_word</a>
+    
+    <li ><a href="#method-i-s_o_n">#s_o_n</a>
+    
+    <li ><a href="#method-i-stat">#stat</a>
+    
+    <li ><a href="#method-i-suma_digitos">#suma_digitos</a>
+    
+    <li ><a href="#method-i-sumar_array">#sumar_array</a>
+    
+    <li ><a href="#method-i-ver_fichero">#ver_fichero</a>
+    
+    <li ><a href="#method-i-C3-A1rea_tri-C3-A1ngulo">#área_triángulo</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="SessionLoad">SessionLoad
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-aledado" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aledado</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="aledado-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">aledado</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-identifier">x</span> = []
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>)
+                <span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value">1</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rand</span>(<span class="ruby-value">6</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">x</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-area_cuadrado" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">area_cuadrado</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="area_cuadrado-source">
+            <pre><span class="ruby-comment"># File eeepc/area_cuadrado.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">area_cuadrado</span>()
+   <span class="ruby-identifier">printf</span>( <span class="ruby-string">&quot;Base: &quot;</span>)
+   <span class="ruby-identifier">b</span>= <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_i</span>
+   <span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;\nEl cuadrado de %d es igual a %d\n&quot;</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">b</span><span class="ruby-operator">*</span><span class="ruby-identifier">b</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-area_rect-C3-A1ngulo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">area_rectángulo</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="area_rect-C3-A1ngulo-source">
+            <pre><span class="ruby-comment"># File ruby/gets/area_rectángulo.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">area_rectángulo</span>()
+   <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Base: &quot;</span>
+   <span class="ruby-identifier">b</span>= <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-comment"># f: float</span>
+   <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Altura: &quot;</span>
+   <span class="ruby-identifier">a</span>= <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_f</span>
+   <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;El área del rectángulo es igual a &quot;</span>, <span class="ruby-identifier">a</span><span class="ruby-operator">*</span><span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-arrays_ej_1" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">arrays_ej_1</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="arrays_ej_1-source">
+            <pre><span class="ruby-comment"># File conjuntos/arrays.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">arrays_ej_1</span>
+  <span class="ruby-identifier">a</span> = (<span class="ruby-string">&quot;a&quot;</span><span class="ruby-operator">..</span><span class="ruby-string">&quot;z&quot;</span>).<span class="ruby-identifier">to_a</span>
+  
+  <span class="ruby-identifier">b</span> = (<span class="ruby-string">&#39;A&#39;</span><span class="ruby-operator">..</span><span class="ruby-string">&#39;Z&#39;</span>).<span class="ruby-identifier">to_a</span>
+  
+  <span class="ruby-comment"># unión de arrays: comunes y no comunes</span>
+  <span class="ruby-identifier">c</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">b</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;el valor de a es:&quot;</span>
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">a</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;el valor de b es:&quot;</span>
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">b</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">b</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;el valor de c es:&quot;</span>
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">c</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">c</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">a</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">a</span>[<span class="ruby-value">0</span>]
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">a</span>[<span class="ruby-value">1</span>]
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">slice</span>(<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">3</span>)
+  <span class="ruby-identifier">print</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">slice</span>(<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">3</span>)
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+  
+  
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">find_all</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;</span> <span class="ruby-string">&#39;e&#39;</span> }
+  
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">find_all</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;e&#39;</span> }
+  
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">find_all</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;e&#39;</span> }
+  
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">find_all</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;e&#39;</span> }
+  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-bis" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bis</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="bis-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bis</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mult4</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword">and</span> <span class="ruby-operator">!</span> <span class="ruby-identifier">mult100</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mult400</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-bisiesto" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bisiesto</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="bisiesto-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bisiesto</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">mult4</span>(<span class="ruby-identifier">x</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">mult100</span>(<span class="ruby-identifier">x</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">mult400</span>(<span class="ruby-identifier">x</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-biss" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">biss</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="biss-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">biss</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-value">100</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-value">400</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-busy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">busy</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="busy-source">
+            <pre><span class="ruby-comment"># File gif/vergif, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">busy</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$root</span>.<span class="ruby-identifier">cursor</span> <span class="ruby-string">&quot;watch&quot;</span> <span class="ruby-comment"># Set a watch cursor</span>
+    <span class="ruby-identifier">$root</span>.<span class="ruby-identifier">update</span> <span class="ruby-comment"># Make sure it updates  the screen</span>
+    <span class="ruby-keyword">yield</span> <span class="ruby-comment"># Call the associated block</span>
+  <span class="ruby-keyword">ensure</span>
+    <span class="ruby-identifier">$root</span>.<span class="ruby-identifier">cursor</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-comment"># Back to original</span>
+    <span class="ruby-identifier">$root</span>.<span class="ruby-identifier">update</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-calculate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calculate</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="calculate-source">
+            <pre><span class="ruby-comment"># File ruby/tk/ej1.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">calculate</span>
+  <span class="ruby-keyword">begin</span>
+     <span class="ruby-identifier">$meters</span>.<span class="ruby-identifier">value</span> = (<span class="ruby-value">0.3048</span><span class="ruby-operator">*</span><span class="ruby-identifier">$feet</span><span class="ruby-operator">*</span><span class="ruby-value">10000.0</span>).<span class="ruby-identifier">round</span>()<span class="ruby-operator">/</span><span class="ruby-value">10000.0</span>
+  <span class="ruby-keyword">rescue</span>
+     <span class="ruby-identifier">$meters</span>.<span class="ruby-identifier">value</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-cat_fichero" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cat_fichero</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cat_fichero-source">
+            <pre><span class="ruby-comment"># File ejemplos/lectoescritura.rb, line 56</span>
+<span class="ruby-keyword">def</span>   <span class="ruby-identifier ruby-title">cat_fichero</span>(<span class="ruby-identifier">nombre</span>)
+
+          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&#39;datos.txt&#39;</span>, <span class="ruby-string">&#39;r&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f1</span><span class="ruby-operator">|</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">linea</span> = <span class="ruby-identifier">f1</span>.<span class="ruby-identifier">gets</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">linea</span>
+            <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-confirmacion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">confirmacion</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="confirmacion-source">
+            <pre><span class="ruby-comment"># File entradas/entradas, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">confirmacion</span>
+    <span class="ruby-identifier">respuestas</span> = {}
+    <span class="ruby-identifier">respuestas</span>[<span class="ruby-value">:nombre</span>] = <span class="ruby-identifier">ask</span>(<span class="ruby-string">&#39;¿Cuál es su nombre? &#39;</span>)
+    <span class="ruby-identifier">respuestas</span>[<span class="ruby-value">:edad</span>] = <span class="ruby-identifier">ask</span>(<span class="ruby-string">&#39;¿Cuál es su edad? &#39;</span>, <span class="ruby-constant">Integer</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">in</span> = <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">790</span> }
+    <span class="ruby-identifier">respuestas</span>[<span class="ruby-value">:motivo</span>] = <span class="ruby-identifier">ask</span>(<span class="ruby-string">&#39;¿Porqué le gustaría ser secretario del tesoro? &#39;</span>)
+
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;De acuerdo, usted es nombrado&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">respuestas</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-contrase-C3-B1a" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">contraseña</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>require &#39;rubygems&#39; require &#39;highline/import&#39;</p>
+          
+          
+
+          
+          <div class="method-source-code" id="contrase-C3-B1a-source">
+            <pre><span class="ruby-comment"># File ruby/contraseña/contraseña.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">contraseña</span>()
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;contraseña&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-copiar_linea_a_linea" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">copiar_linea_a_linea</span><span
+            class="method-args">(entrada, salida)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="copiar_linea_a_linea-source">
+            <pre><span class="ruby-comment"># File ejemplos/for01.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">copiar_linea_a_linea</span>(<span class="ruby-identifier">entrada</span>, <span class="ruby-identifier">salida</span>)
+      <span class="ruby-constant">File</span>.<span class="ruby-identifier">readlines</span>(<span class="ruby-identifier">entrada</span>, <span class="ruby-string">&#39;r&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">linea</span><span class="ruby-operator">|</span>
+     <span class="ruby-identifier">puts</span> <span class="ruby-identifier">linea</span>
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-create_tree" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_tree</span><span
+            class="method-args">(directories, parent=&#39;.&#39;)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_tree-source">
+            <pre><span class="ruby-comment"># File directorios/create_tree.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create_tree</span>(<span class="ruby-identifier">directories</span>, <span class="ruby-identifier">parent</span>=<span class="ruby-string">&#39;.&#39;</span>)
+  <span class="ruby-identifier">directories</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">dir</span>, <span class="ruby-identifier">files</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">parent</span>, <span class="ruby-identifier">dir</span>)
+    <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-identifier">path</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">path</span>)
+    <span class="ruby-identifier">files</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">filename</span>, <span class="ruby-identifier">contents</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">respond_to?</span> <span class="ruby-value">:each_pair</span> <span class="ruby-comment"># es un subdirectorio</span>
+        <span class="ruby-identifier">create_tree</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">path</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">open</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">filename</span>), <span class="ruby-string">&#39;w&#39;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">contents</span> <span class="ruby-operator">||</span> <span class="ruby-string">&#39; &#39;</span> }
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-digitos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">digitos</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="digitos-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">digitos</span>(<span class="ruby-identifier">n</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">10</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-value">1</span><span class="ruby-operator">+</span><span class="ruby-identifier">digitos</span>(<span class="ruby-identifier">n</span><span class="ruby-operator">/</span><span class="ruby-value">10</span>)
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-dir" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">dir</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="dir-source">
+            <pre><span class="ruby-comment"># File dir/dir.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dir</span>
+        <span class="ruby-comment"># Find.find(&#39;.&#39;).collect.inject([]) {|x, y| x &lt;&lt; y if File.file? y }</span>
+        <span class="ruby-constant">Find</span>.<span class="ruby-identifier">find</span>(<span class="ruby-string">&#39;.&#39;</span>).<span class="ruby-identifier">collect</span>.<span class="ruby-identifier">inject</span>([]) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span><span class="ruby-operator">|</span> 
+                   <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;x:&quot;</span>
+                   <span class="ruby-identifier">p</span> <span class="ruby-identifier">x</span>
+                   <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;y:&quot;</span>
+                   <span class="ruby-identifier">p</span> <span class="ruby-identifier">y</span>
+                   <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;-------------------------------&quot;</span>
+                   <span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">y</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-ej_Familia_Torre" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ej_Familia_Torre</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ej_Familia_Torre-source">
+            <pre><span class="ruby-comment"># File árbol/árbol.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">ej_Familia_Torre</span>
+  <span class="ruby-identifier">a</span> = <span class="ruby-constant">Arbol</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Gorgonio el Ingeniero de minas&quot;</span>)
+
+  <span class="ruby-comment">### primera generación</span>
+
+  <span class="ruby-identifier">hijo1</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Antonio el Flecha&quot;</span>
+  <span class="ruby-identifier">hijo2</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María de las Mercedes&quot;</span>
+  <span class="ruby-identifier">hijo3</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María la del Pantano&quot;</span>
+  <span class="ruby-identifier">hijo4</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Gorgonio padre&quot;</span>
+  <span class="ruby-identifier">hijo5</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Gorgonio tío Toño&quot;</span>
+  <span class="ruby-identifier">hijo6</span> = <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Nandy&quot;</span>
+
+  <span class="ruby-comment">### segunda generación</span>
+
+  <span class="ruby-identifier">hijo2_1</span> = <span class="ruby-identifier">hijo2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Merche Bodega Torre&quot;</span>
+  <span class="ruby-identifier">hijo2_2</span> = <span class="ruby-identifier">hijo2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Fernando Bodega Torre&quot;</span>
+  <span class="ruby-identifier">hijo2_3</span> = <span class="ruby-identifier">hijo2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Rosa (farmacéutica) Bodega Torre&quot;</span>
+  <span class="ruby-identifier">hijo2_4</span> = <span class="ruby-identifier">hijo2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Antonia Bodega Torre&quot;</span>
+
+  <span class="ruby-identifier">hijo3_1</span> = <span class="ruby-identifier">hijo3</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Ana Marí Sarmiento Torre&quot;</span>
+  <span class="ruby-identifier">hijo3_2</span> = <span class="ruby-identifier">hijo3</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Javierín Sarmiento Torre&quot;</span>
+
+  <span class="ruby-identifier">hijo4_1</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Antonia Torre Hernández&quot;</span>
+  <span class="ruby-identifier">hijo4_2</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Gorgonio José Luis Torre Hernández&quot;</span>
+  <span class="ruby-identifier">jlt</span> = <span class="ruby-identifier">hijo4_2</span>
+  <span class="ruby-identifier">hijo4_3</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Luisa Carlota Torre Hernández&quot;</span>
+  <span class="ruby-identifier">hijo4_4</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Fernanda Torre Hernández&quot;</span>
+  <span class="ruby-identifier">fer</span> = <span class="ruby-identifier">hijo4_4</span>
+  <span class="ruby-identifier">hijo4_5</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Ignacio Jesús Torre Hernández&quot;</span>
+  <span class="ruby-identifier">hijo4_6</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Hilario Vicente Torre Hernández&quot;</span>
+  <span class="ruby-identifier">hijo4_7</span> = <span class="ruby-identifier">hijo4</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Paloma Torre Hernández&quot;</span>
+
+  <span class="ruby-identifier">hijo5_1</span> = <span class="ruby-identifier">hijo5</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Gorgonio&quot;</span>
+  <span class="ruby-identifier">hijo5_2</span> = <span class="ruby-identifier">hijo5</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Antonio&quot;</span>
+  <span class="ruby-identifier">hijo5_3</span> = <span class="ruby-identifier">hijo5</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;hija...?&quot;</span>
+
+  <span class="ruby-identifier">hijo6_1</span> = <span class="ruby-identifier">hijo6</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Virgilín&quot;</span>
+  <span class="ruby-identifier">hijo6_2</span> = <span class="ruby-identifier">hijo6</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;María Rosa&quot;</span>
+
+  <span class="ruby-comment">### tercera generación</span>
+
+  <span class="ruby-identifier">jlt_1</span> = <span class="ruby-identifier">jlt</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Jon Torre Sanz&quot;</span>
+  <span class="ruby-identifier">jon</span> = <span class="ruby-identifier">jlt_1</span>
+  <span class="ruby-identifier">jlt_2</span> = <span class="ruby-identifier">jlt</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Miriam Torre Sanz&quot;</span>
+  <span class="ruby-identifier">miriam</span> = <span class="ruby-identifier">jlt_2</span>
+
+  <span class="ruby-identifier">fer_1</span> = <span class="ruby-identifier">fer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Diego Besné Torre&quot;</span>
+  <span class="ruby-identifier">diego</span> = <span class="ruby-identifier">fer_1</span>
+  <span class="ruby-identifier">fer_2</span> = <span class="ruby-identifier">fer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Adriana Besné Torre&quot;</span>
+  <span class="ruby-identifier">adriana</span> = <span class="ruby-identifier">fer_2</span>
+  <span class="ruby-identifier">fer_3</span> = <span class="ruby-identifier">fer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Pedro Besné Torre&quot;</span>
+  <span class="ruby-identifier">pedro</span> = <span class="ruby-identifier">fer_3</span>
+  <span class="ruby-identifier">fer_4</span> = <span class="ruby-identifier">fer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Marina Besné Torre&quot;</span>
+  <span class="ruby-identifier">marina</span> = <span class="ruby-identifier">fer_4</span>
+
+  <span class="ruby-identifier">hijo6_1_1</span> = <span class="ruby-identifier">hijo6_1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Hijo de Virgilín&quot;</span>
+  <span class="ruby-identifier">hijo6_1_2</span> = <span class="ruby-identifier">hijo6_1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Hija de Virgilín&quot;</span>
+
+  <span class="ruby-comment">### cuarta generación</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-identifier">lucía</span> = <span class="ruby-identifier">miriam</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Lucía Rodriguez Torre&quot;</span>
+  <span class="ruby-identifier">celia</span> = <span class="ruby-identifier">jon</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;Celia Torre González&quot;</span>
+
+
+
+  <span class="ruby-identifier">a</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">puts</span> <span class="ruby-identifier">x</span> }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-ejemplo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ejemplo</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ejemplo-source">
+            <pre><span class="ruby-comment"># File ejemplos/ej002.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">ejemplo</span>
+    <span class="ruby-identifier">n</span> = <span class="ruby-identifier">pedir_codigo_producto</span>()
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">n</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;El cuadrado de #{n} es igual a #{n*n}&quot;</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nEl cuadrado de &quot;</span>, <span class="ruby-identifier">n</span>, <span class="ruby-string">&quot; es igual a &quot;</span>, <span class="ruby-identifier">n</span><span class="ruby-operator">*</span><span class="ruby-identifier">n</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-espera_intro" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">espera_intro</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="espera_intro-source">
+            <pre><span class="ruby-comment"># File ficheros/menu, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">espera_intro</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;pulsa la tecla &#39;intro&#39; para continuar...&quot;</span>
+    <span class="ruby-identifier">gets</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fact" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fact</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fact-source">
+            <pre><span class="ruby-comment"># File eeepc/factor.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fact</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span><span class="ruby-operator">==</span><span class="ruby-value">1</span>
+       <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+       <span class="ruby-identifier">n</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">fact</span>(<span class="ruby-identifier">n</span><span class="ruby-value">-1</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-factorial" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">factorial</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="factorial-source">
+            <pre><span class="ruby-comment"># File ejemplos/rfact (2).rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">factorial</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+       <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+       <span class="ruby-identifier">n</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">factorial</span>(<span class="ruby-identifier">n</span><span class="ruby-value">-1</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fibo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fibo</span><span
+            class="method-args">(max) { |i| ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fibo-source">
+            <pre><span class="ruby-comment"># File mate/fibo.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fibo</span>(<span class="ruby-identifier">max</span>)
+  <span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>= <span class="ruby-value">1</span>, <span class="ruby-value">2</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">max</span>
+     <span class="ruby-keyword">yield</span> <span class="ruby-identifier">i</span>
+     <span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span> = <span class="ruby-identifier">j</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-identifier">j</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-foo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">foo</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="foo-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">foo</span>(<span class="ruby-identifier">x</span>)
+        <span class="ruby-keyword">return</span> [<span class="ruby-identifier">x</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">x</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-genBlock" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">genBlock</span><span
+            class="method-args">(nr_bloque, md5_anterior, datos)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="genBlock-source">
+            <pre><span class="ruby-comment"># File encadenados/digest.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">genBlock</span> (<span class="ruby-identifier">nr_bloque</span>, <span class="ruby-identifier">md5_anterior</span>, <span class="ruby-identifier">datos</span>)
+   <span class="ruby-identifier">md5</span> = <span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">MD5</span>.<span class="ruby-identifier">new</span>
+   
+   <span class="ruby-identifier">pista</span> = <span class="ruby-value">0</span>
+   
+   <span class="ruby-identifier">loop</span> <span class="ruby-keyword">do</span>
+
+      <span class="ruby-identifier">pista</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      
+      <span class="ruby-identifier">mensaje</span> = <span class="ruby-string">&quot;bloque &quot;</span>
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">nr_bloque</span>.<span class="ruby-identifier">to_s</span>  
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span>  <span class="ruby-string">&quot;: md5 bloque anterior:&quot;</span>  <span class="ruby-operator">+</span> <span class="ruby-identifier">md5_anterior</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">datos</span>
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;iteraciones: &quot;</span>
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">pista</span>.<span class="ruby-identifier">to_s</span> 
+      <span class="ruby-identifier">mensaje</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span>
+
+      <span class="ruby-identifier">puts</span> <span class="ruby-identifier">mensaje</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;----------------------------------&quot;</span>
+      
+      <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-node">&quot;bloque/#{nr_bloque.to_s}&quot;</span>, <span class="ruby-string">&quot;w&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> 
+                   <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-node">&quot;#{mensaje}&quot;</span>) 
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">sha256</span> = <span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">SHA256</span>.<span class="ruby-identifier">file</span> <span class="ruby-node">&quot;bloque/#{nr_bloque.to_s}&quot;</span> 
+      <span class="ruby-identifier">md5sum</span> = <span class="ruby-identifier">sha256</span>.<span class="ruby-identifier">hexdigest</span>
+
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">md5sum</span>.<span class="ruby-identifier">to_s</span> 
+      
+      <span class="ruby-identifier">car</span> = <span class="ruby-identifier">md5sum</span>[<span class="ruby-value">0</span>]
+
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">car</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;a&#39;</span> 
+              <span class="ruby-identifier">h</span> = [ <span class="ruby-identifier">md5sum</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">mensaje</span> ]
+      <span class="ruby-keyword">end</span>
+     
+      <span class="ruby-comment"># crear un fichero con  el mensaje y de nombre bloque_#{nr_bloque}.blk</span>
+      <span class="ruby-comment"># File.open(nombre, &#39;w&#39;).write mensaje</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">h</span>  <span class="ruby-keyword">if</span> <span class="ruby-identifier">car</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;a&#39;</span>
+
+
+
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-genBloques" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">genBloques</span><span
+            class="method-args">(nr_bloques=1000)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="genBloques-source">
+            <pre><span class="ruby-comment"># File encadenados/genbloques.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">genBloques</span>(<span class="ruby-identifier">nr_bloques</span>=<span class="ruby-value">1000</span>) <span class="ruby-comment"># número de bloques a generar en la simulación</span>
+   <span class="ruby-identifier">a</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+   <span class="ruby-identifier">nr_bloque</span> = <span class="ruby-value">0</span>        <span class="ruby-comment"># número del bloque inicial</span>
+   <span class="ruby-identifier">nr_bloques</span> = <span class="ruby-value">100</span>     <span class="ruby-comment"># número de bloques a generar en la simulación</span>
+
+   <span class="ruby-identifier">md5</span> = <span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">MD5</span>.<span class="ruby-identifier">new</span>
+   <span class="ruby-identifier">md5sum</span> = <span class="ruby-identifier">md5</span>.<span class="ruby-identifier">hexdigest</span>
+
+   <span class="ruby-identifier">md5</span>.<span class="ruby-identifier">update</span> <span class="ruby-string">&#39;bloque cero&#39;</span> <span class="ruby-comment"># contenido del mensaje del bloque inicial</span>
+   <span class="ruby-identifier">datos</span> = <span class="ruby-identifier">genDatos</span>()       <span class="ruby-comment"># podríamos hacer que siempre fuera el mismo</span>
+   <span class="ruby-identifier">bloque</span> = <span class="ruby-identifier">genBlock</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">md5sum</span>, <span class="ruby-identifier">datos</span>)
+
+   <span class="ruby-keyword">while</span> <span class="ruby-identifier">nr_bloque</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">nr_bloques</span> 
+      <span class="ruby-identifier">a</span>[<span class="ruby-identifier">nr_bloque</span>] = <span class="ruby-identifier">bloque</span>
+      <span class="ruby-identifier">md5_anterior</span> = <span class="ruby-identifier">bloque</span>[<span class="ruby-value">0</span>]
+      <span class="ruby-identifier">nr_bloque</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">datos</span> = <span class="ruby-identifier">genDatos</span>()
+      <span class="ruby-identifier">bloque</span> = <span class="ruby-identifier">genBlock</span>(<span class="ruby-identifier">nr_bloque</span>, <span class="ruby-identifier">md5_anterior</span>, <span class="ruby-identifier">datos</span>)
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-genDatos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">genDatos</span><span
+            class="method-args">(n=1234)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="genDatos-source">
+            <pre><span class="ruby-comment"># File encadenados/digest.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">genDatos</span>(<span class="ruby-identifier">n</span>=<span class="ruby-value">1234</span>)
+    <span class="ruby-comment">#srand n</span>
+    <span class="ruby-identifier">nr_alumnos</span> = <span class="ruby-value">25</span>
+    <span class="ruby-identifier">p_acierto</span> = <span class="ruby-value">0.75</span>
+    <span class="ruby-identifier">p_fallo</span>   = <span class="ruby-value">0.25</span>
+
+    <span class="ruby-identifier">datos</span> = <span class="ruby-string">&quot;&quot;</span>
+
+    (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">4</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> 
+       <span class="ruby-identifier">rta</span> = <span class="ruby-identifier">rand</span>()
+   
+       <span class="ruby-keyword">if</span> <span class="ruby-identifier">rta</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">p_fallo</span> 
+         <span class="ruby-identifier">califica</span> = <span class="ruby-string">&quot;i\n&quot;</span> 
+       <span class="ruby-keyword">else</span>
+         <span class="ruby-identifier">califica</span> = <span class="ruby-string">&quot;c\n&quot;</span> 
+       <span class="ruby-keyword">end</span>
+   
+       <span class="ruby-identifier">nr_alumno</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-identifier">nr_alumnos</span>)
+   
+       <span class="ruby-identifier">datos</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">nr_alumno</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span>  <span class="ruby-identifier">califica</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">datos</span> 
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-genera_1000_enteros" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">genera_1000_enteros</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>generación de enteros pseudoaleatorios</p>
+          
+          
+
+          
+          <div class="method-source-code" id="genera_1000_enteros-source">
+            <pre><span class="ruby-comment"># File ficheros/ej5, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">genera_1000_enteros</span>(<span class="ruby-identifier">nombre</span>)
+    <span class="ruby-identifier">open</span>(<span class="ruby-identifier">nombre</span>, <span class="ruby-string">&#39;w&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">1000</span>
+      <span class="ruby-identifier">f</span>.<span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;%d \n&quot;</span>, <span class="ruby-identifier">rand</span>(<span class="ruby-value">100000</span>))
+     <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-iniciar_array" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">iniciar_array</span><span
+            class="method-args">(array)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="iniciar_array-source">
+            <pre><span class="ruby-comment"># File ex/2012ene1.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">iniciar_array</span>(<span class="ruby-identifier">array</span>)
+    <span class="ruby-identifier">imax</span>=<span class="ruby-value">100</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">imax</span>
+      <span class="ruby-identifier">array</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-value">2</span><span class="ruby-operator">*</span><span class="ruby-identifier">i</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">imax</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-iniciar_contadores" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">iniciar_contadores</span><span
+            class="method-args">(cuantos)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="iniciar_contadores-source">
+            <pre><span class="ruby-comment"># File ex/2012ene1.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">iniciar_contadores</span>(<span class="ruby-identifier">cuantos</span>)
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">9</span>
+      <span class="ruby-identifier">cuantos</span>[<span class="ruby-identifier">i</span>]=<span class="ruby-value">0</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-leer_coordenadas" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">leer_coordenadas</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="leer_coordenadas-source">
+            <pre><span class="ruby-comment"># File ejemplos/lectoescritura.rb, line 27</span>
+<span class="ruby-keyword">def</span>   <span class="ruby-identifier ruby-title">leer_coordenadas</span>(<span class="ruby-identifier">nombre</span>)
+      <span class="ruby-identifier">fi</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">nombre</span>, <span class="ruby-string">&#39;r&#39;</span>)
+      <span class="ruby-keyword">while</span> <span class="ruby-identifier">linea</span> = <span class="ruby-identifier">fi</span>.<span class="ruby-identifier">gets</span>
+            <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span> = <span class="ruby-identifier">linea</span>.<span class="ruby-identifier">scanf</span>(<span class="ruby-string">&quot;%d%d&quot;</span>)
+            <span class="ruby-comment">#printf (&quot;x:%d y:%d\n&quot;, x, y) # no</span>
+            <span class="ruby-comment">#printf (&quot;x:%d y:%d\n&quot;, x, y) # ok</span>
+            <span class="ruby-identifier">printf</span> <span class="ruby-string">&quot;%d %d \n&quot;</span>,  <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span> <span class="ruby-comment"># ok</span>
+            <span class="ruby-identifier">printf</span> <span class="ruby-string">&quot;%i %i \n&quot;</span>,  <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span> <span class="ruby-comment"># ok</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">fi</span>.<span class="ruby-identifier">close</span>()
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-listar_ascii" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">listar_ascii</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="listar_ascii-source">
+            <pre><span class="ruby-comment"># File math/ascii.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">listar_ascii</span>
+   (<span class="ruby-value">32</span><span class="ruby-operator">..</span><span class="ruby-value">255</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">n</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">n</span>
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-llamar_a_bloque" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">llamar_a_bloque</span><span
+            class="method-args">() { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="llamar_a_bloque-source">
+            <pre><span class="ruby-comment"># File bloques/bloques.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">llamar_a_bloque</span>
+   <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;iniciando llamar_a_bloque&quot;</span>
+   <span class="ruby-keyword">yield</span>
+   <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;después de llamar al bloque&quot;</span>
+   
+   <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;iniciando llamar_a_bloque&quot;</span>
+   <span class="ruby-keyword">yield</span>
+   <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;después de llamar al bloque&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-llamar_con_argumentos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">llamar_con_argumentos</span><span
+            class="method-args">() { |1, 2, 3| ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="llamar_con_argumentos-source">
+            <pre><span class="ruby-comment"># File bloques/bloques.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">llamar_con_argumentos</span>
+    <span class="ruby-keyword">yield</span> <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">3</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-main" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">main</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="main-source">
+            <pre><span class="ruby-comment"># File ficheros/ej5, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">main</span>()
+    <span class="ruby-identifier">nombre_fichero</span>=<span class="ruby-string">&#39;numeros_aleatorios.txt&#39;</span>
+    <span class="ruby-identifier">genera_1000_enteros</span>(<span class="ruby-identifier">nombre_fichero</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-make_it_quack" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">make_it_quack</span><span
+            class="method-args">(duck)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="make_it_quack-source">
+            <pre><span class="ruby-comment"># File cap8/ej_8_1.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">make_it_quack</span>(<span class="ruby-identifier">duck</span>)
+   <span class="ruby-identifier">duck</span>.<span class="ruby-identifier">quack</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-make_it_swim" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">make_it_swim</span><span
+            class="method-args">(duck)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="make_it_swim-source">
+            <pre><span class="ruby-comment"># File cap8/ej_8_1.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">make_it_swim</span>(<span class="ruby-identifier">duck</span>)
+    <span class="ruby-identifier">duck</span>.<span class="ruby-identifier">swim</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mat_contra" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mat_contra</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mat_contra-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mat_contra</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-identifier">matriz</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>){<span class="ruby-value">0</span>}}  
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">f</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">length</span>)
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">f</span><span class="ruby-operator">+</span><span class="ruby-identifier">c</span><span class="ruby-operator">==</span><span class="ruby-identifier">n</span><span class="ruby-value">-1</span>
+       <span class="ruby-identifier">matriz</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] = <span class="ruby-value">1</span>
+      <span class="ruby-keyword">end</span>
+     <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">matriz</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mat_prod" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mat_prod</span><span
+            class="method-args">(matriz)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mat_prod-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mat_prod</span>(<span class="ruby-identifier">matriz</span>)
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">f</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">length</span>)
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>)
+       <span class="ruby-identifier">matriz</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] = <span class="ruby-identifier">f</span><span class="ruby-operator">*</span><span class="ruby-identifier">c</span>
+     <span class="ruby-keyword">end</span>
+     <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mat_unidad" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mat_unidad</span><span
+            class="method-args">(nf, nc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mat_unidad-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mat_unidad</span>(<span class="ruby-identifier">nf</span>, <span class="ruby-identifier">nc</span>)
+    <span class="ruby-identifier">matriz</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nf</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nc</span>){<span class="ruby-value">0</span>}}  
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">f</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">length</span>)
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">matriz</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">f</span><span class="ruby-operator">==</span> <span class="ruby-identifier">c</span>
+       <span class="ruby-identifier">matriz</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] = <span class="ruby-value">1</span>
+      <span class="ruby-keyword">else</span>
+       <span class="ruby-identifier">matriz</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] = <span class="ruby-value">0</span>
+      <span class="ruby-keyword">end</span>
+     <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">matriz</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-matriz" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">matriz</span><span
+            class="method-args">(nf, nc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="matriz-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">matriz</span>(<span class="ruby-identifier">nf</span>, <span class="ruby-identifier">nc</span>)
+    <span class="ruby-identifier">matriz</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nf</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nc</span>){<span class="ruby-value">0</span>}}
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">matriz</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mean" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mean</span><span
+            class="method-args">(array)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mean-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mean</span>(<span class="ruby-identifier">array</span>)
+        <span class="ruby-identifier">array</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">x</span> } <span class="ruby-operator">/</span> <span class="ruby-identifier">array</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">to_f</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-media" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">media</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="media-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">media</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">sx</span> = <span class="ruby-value">0.0</span>
+    <span class="ruby-identifier">n</span>  = <span class="ruby-value">0</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">xi</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">x</span>
+                <span class="ruby-identifier">sx</span> = <span class="ruby-identifier">sx</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">xi</span>
+        <span class="ruby-identifier">n</span> = <span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">sx</span><span class="ruby-operator">/</span><span class="ruby-identifier">n</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mediana" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mediana</span><span
+            class="method-args">(vector, clasificado=false)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mediana-source">
+            <pre><span class="ruby-comment"># File estadística/estad.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mediana</span>(<span class="ruby-identifier">vector</span>, <span class="ruby-identifier">clasificado</span>=<span class="ruby-keyword">false</span>)
+
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">vector</span>.<span class="ruby-identifier">empty?</span>
+    
+    <span class="ruby-identifier">vector</span> = <span class="ruby-identifier">vector</span>.<span class="ruby-identifier">sort</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">clasificado</span>
+    <span class="ruby-identifier">mitad</span> = <span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">vector</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">%</span> <span class="ruby-value">2</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span><span class="ruby-operator">?</span> <span class="ruby-identifier">vector</span>[<span class="ruby-identifier">mitad</span>] 
+                               <span class="ruby-operator">:</span> <span class="ruby-identifier">media</span>(<span class="ruby-identifier">vector</span>[<span class="ruby-identifier">mitad</span><span class="ruby-value">-1</span><span class="ruby-operator">..</span><span class="ruby-identifier">mitad</span>])
+    <span class="ruby-comment"># la mediana es el elemento que se encuentra</span>
+    <span class="ruby-comment"># en la mitad de la población ordenada</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-minimo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">minimo</span><span
+            class="method-args">(v)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="minimo-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">minimo</span>(<span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">min</span>=<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">v</span>.<span class="ruby-identifier">length</span><span class="ruby-value">-1</span>)
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min</span>
+                        <span class="ruby-identifier">min</span> = <span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>]
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">min</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-moda" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">moda</span><span
+            class="method-args">(vector, todas=true)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="moda-source">
+            <pre><span class="ruby-comment"># File estadística/estad.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">moda</span>(<span class="ruby-identifier">vector</span>, <span class="ruby-identifier">todas</span>=<span class="ruby-keyword">true</span>)
+    <span class="ruby-identifier">histograma</span> = <span class="ruby-identifier">vector</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>)) { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">x</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>; <span class="ruby-identifier">h</span>} 
+    <span class="ruby-identifier">modas</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">histograma</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>, <span class="ruby-identifier">times</span> <span class="ruby-operator">|</span>
+      <span class="ruby-identifier">modas</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">item</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">modas</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">times</span><span class="ruby-operator">==</span><span class="ruby-identifier">modas</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">todas</span>
+      <span class="ruby-identifier">modas</span> = [<span class="ruby-identifier">times</span>, <span class="ruby-identifier">item</span>] <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">modas</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">times</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span> <span class="ruby-keyword">or</span> (<span class="ruby-identifier">modas</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">times</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">modas</span>[<span class="ruby-value">0</span>])
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">modas</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">modas</span>[<span class="ruby-value">1</span><span class="ruby-operator">...</span><span class="ruby-identifier">modas</span>.<span class="ruby-identifier">size</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">modas</span>
+    
+    <span class="ruby-comment"># La moda es el elemento que más se repite,</span>
+        <span class="ruby-comment"># si los elementos no se repiten, no existe.</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mostrar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mostrar</span><span
+            class="method-args">(matriz)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mostrar-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mostrar</span>(<span class="ruby-identifier">matriz</span>)
+    <span class="ruby-identifier">nf</span> = <span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-identifier">nc</span> = <span class="ruby-identifier">matriz</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>
+    <span class="ruby-keyword">alias</span> <span class="ruby-identifier">imprimir</span> <span class="ruby-identifier">puts</span>
+    <span class="ruby-identifier">imprimir</span> <span class="ruby-node">&quot;A continuación se muestra una matriz de #{nf}x#{nc}&quot;</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">f</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">nf</span>)
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">nc</span>)
+       <span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;%4.0f &quot;</span>, <span class="ruby-identifier">matriz</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>])
+     <span class="ruby-keyword">end</span>
+     <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\n&quot;</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mostrarArray" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mostrarArray</span><span
+            class="method-args">(a)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mostrarArray-source">
+            <pre><span class="ruby-comment"># File encadenados/digest.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mostrarArray</span> (<span class="ruby-identifier">a</span>)
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;******** mostrar las parejas *********** &quot;</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span>(<span class="ruby-identifier">a</span>.<span class="ruby-identifier">size</span>)
+       <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;md5: &quot;</span>
+       <span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-value">0</span>] <span class="ruby-comment"># md5 de los datos de este bloque</span>
+       <span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-value">1</span>] <span class="ruby-comment"># nr bloque : md5 bloque anterior y datos</span>
+    <span class="ruby-keyword">end</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mostrar_fichero" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mostrar_fichero</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mostrar_fichero-source">
+            <pre><span class="ruby-comment"># File ejemplos/for01.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mostrar_fichero</span>(<span class="ruby-identifier">nombre</span>)
+      <span class="ruby-constant">File</span>.<span class="ruby-identifier">readlines</span>(<span class="ruby-identifier">nombre</span>, <span class="ruby-string">&#39;r&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">linea</span><span class="ruby-operator">|</span>
+     <span class="ruby-identifier">puts</span> <span class="ruby-identifier">linea</span>
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mtd" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mtd</span><span
+            class="method-args">(a=99, b=a+1)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>p012mtdstack.rb Sequence in which the parameters are put on to the statck
+is left to right</p>
+          
+          
+
+          
+          <div class="method-source-code" id="mtd-source">
+            <pre><span class="ruby-comment"># File ejemplos/p012mtdstack.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mtd</span>(<span class="ruby-identifier">a</span>=<span class="ruby-value">99</span>, <span class="ruby-identifier">b</span>=<span class="ruby-identifier">a</span><span class="ruby-value">+1</span>)
+  <span class="ruby-keyword">return</span> [<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mulmat" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">mulmat</span><span
+            class="method-args">(a, b)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Object.html#method-i-multiplicar">multiplicar</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-mult100" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mult100</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mult100-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mult100</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-value">100</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mult4" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mult4</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mult4-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mult4</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-value">4</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mult400" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mult400</span><span
+            class="method-args">(x)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mult400-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mult400</span>(<span class="ruby-identifier">x</span>)
+    <span class="ruby-identifier">multn</span>(<span class="ruby-identifier">x</span>, <span class="ruby-value">400</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-multiplicar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">multiplicar</span><span
+            class="method-args">(a, b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="multiplicar-source">
+            <pre><span class="ruby-comment"># File eeepc/mat.rb, line 106</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multiplicar</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+    <span class="ruby-identifier">nfa</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-identifier">nca</span> = <span class="ruby-identifier">a</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>
+    <span class="ruby-identifier">nfb</span> = <span class="ruby-identifier">b</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-identifier">ncb</span> =<span class="ruby-identifier">b</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">nca</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">nfb</span>
+       <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;no son multiplicables&quot;</span> 
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">r</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nfa</span>){<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">ncb</span>){<span class="ruby-value">0</span>}}
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">f</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">nfa</span>
+      <span class="ruby-keyword">for</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">ncb</span>
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">nca</span>
+           <span class="ruby-identifier">r</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] =  <span class="ruby-identifier">r</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">c</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">f</span>][<span class="ruby-identifier">k</span>]<span class="ruby-operator">*</span><span class="ruby-identifier">b</span>[<span class="ruby-identifier">k</span>][<span class="ruby-identifier">c</span>]
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">r</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Object.html#method-i-mulmat">mulmat</a>, mulmat, mulmat, mulmat
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-multn" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">multn</span><span
+            class="method-args">(x, n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="multn-source">
+            <pre><span class="ruby-comment"># File ejemplos/bisiesto.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multn</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">n</span>)
+    <span class="ruby-identifier">x</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-naturales" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">naturales</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Escribir los n primeros números naturales</p>
+          
+          
+
+          
+          <div class="method-source-code" id="naturales-source">
+            <pre><span class="ruby-comment"># File ejemplos/naturales (2).rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">naturales</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-identifier">i</span>=<span class="ruby-value">1</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">n</span>
+          <span class="ruby-comment"># puts i</span>
+          <span class="ruby-comment"># p i</span>
+          <span class="ruby-comment"># print i, &quot; &quot;</span>
+          <span class="ruby-comment"># printf(&quot;%i &quot;, i)</span>
+          <span class="ruby-comment"># printf(&quot;%10d\n&quot;, i)</span>
+          <span class="ruby-identifier">printf</span>(<span class="ruby-string">&quot;%10d&quot;</span>, <span class="ruby-identifier">i</span>)         
+          <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-nover_fichero" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nover_fichero</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="nover_fichero-source">
+            <pre><span class="ruby-comment"># File ejemplos/lectoescritura.rb, line 48</span>
+<span class="ruby-keyword">def</span>   <span class="ruby-identifier ruby-title">nover_fichero</span>(<span class="ruby-identifier">nombre</span>)
+      <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&#39;datos.txt&#39;</span>, <span class="ruby-string">&#39;r&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f1</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">f1</span>.<span class="ruby-identifier">readlines</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">linea</span><span class="ruby-operator">|</span>
+           <span class="ruby-identifier">puts</span> <span class="ruby-identifier">linea</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-num_cifras" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">num_cifras</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="num_cifras-source">
+            <pre><span class="ruby-comment"># File ex/2012ene1.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">num_cifras</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-identifier">cifras</span> = <span class="ruby-value">1</span>
+    <span class="ruby-identifier">coc</span> = <span class="ruby-identifier">n</span><span class="ruby-operator">/</span><span class="ruby-value">10</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">coc</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+       <span class="ruby-identifier">coc</span> = <span class="ruby-identifier">coc</span> <span class="ruby-operator">/</span> <span class="ruby-value">10</span>
+       <span class="ruby-identifier">cifras</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">cifras</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-obtenerDigest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">obtenerDigest</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="obtenerDigest-source">
+            <pre><span class="ruby-comment"># File encadenados/genbloques.rb, line 102</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">obtenerDigest</span>
+    <span class="ruby-constant">Find</span>.<span class="ruby-identifier">find</span>(<span class="ruby-string">&#39;bloque&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> 
+       <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">file?</span> <span class="ruby-identifier">x</span>
+           <span class="ruby-identifier">puts</span> <span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">SHA256</span>.<span class="ruby-identifier">file</span> <span class="ruby-node">&quot;#{x}&quot;</span> 
+       <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-obtenerMD5" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">obtenerMD5</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="obtenerMD5-source">
+            <pre><span class="ruby-comment"># File encadenados/genbloques.rb, line 110</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">obtenerMD5</span>
+    <span class="ruby-constant">Find</span>.<span class="ruby-identifier">find</span>(<span class="ruby-string">&#39;bloque&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> 
+       <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">file?</span> <span class="ruby-identifier">x</span>
+          <span class="ruby-identifier">puts</span> <span class="ruby-constant">Digest</span><span class="ruby-operator">::</span><span class="ruby-constant">MD5</span>.<span class="ruby-identifier">file</span> <span class="ruby-node">&quot;#{x}&quot;</span> 
+       <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-obtener_vector_cifras" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">obtener_vector_cifras</span><span
+            class="method-args">(enteros, cuantos, num_elem)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="obtener_vector_cifras-source">
+            <pre><span class="ruby-comment"># File ex/2012ene1.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">obtener_vector_cifras</span>(<span class="ruby-identifier">enteros</span>, <span class="ruby-identifier">cuantos</span>, <span class="ruby-identifier">num_elem</span>)
+    <span class="ruby-identifier">total_cifras</span> = <span class="ruby-value">0</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">...</span><span class="ruby-identifier">num_elem</span>
+       <span class="ruby-identifier">cifras</span> = <span class="ruby-identifier">num_cifras</span>(<span class="ruby-identifier">enteros</span>[<span class="ruby-identifier">i</span>])
+       <span class="ruby-identifier">cuantos</span>[<span class="ruby-identifier">cifras</span>]<span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+       <span class="ruby-identifier">total_cifras</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">cifras</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">cuantos</span>[<span class="ruby-value">0</span>]=<span class="ruby-identifier">total_cifras</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pedir_codigo_producto" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pedir_codigo_producto</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>ex reserva enero 2012 (no utilizado)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="pedir_codigo_producto-source">
+            <pre><span class="ruby-comment"># File ejemplos/almacen.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pedir_codigo_producto</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el código del producto entre 0 y 99:&quot;</span>
+    <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">99</span> 
+       <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Error: el número debe ser mayor que cero y menor que 100&quot;</span>
+       <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el código del producto entre 0 y 99:&quot;</span>
+       <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pedir_datos_iniciales" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pedir_datos_iniciales</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="pedir_datos_iniciales-source">
+            <pre><span class="ruby-comment"># File ejemplos/almacen.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pedir_datos_iniciales</span>
+    <span class="ruby-identifier">unidades</span>=[]
+    <span class="ruby-identifier">precios</span>=[]
+    <span class="ruby-identifier">codigo</span> = <span class="ruby-identifier">pedir_codigo_producto</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">codigo</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">unidad</span> = <span class="ruby-identifier">pedir_unidades_producto</span>
+      <span class="ruby-identifier">precio</span> = <span class="ruby-identifier">pedir_precio_producto</span>
+      <span class="ruby-identifier">unidades</span>[<span class="ruby-identifier">codigo</span>]=<span class="ruby-identifier">unidad</span>
+      <span class="ruby-identifier">precios</span>[<span class="ruby-identifier">codigo</span>]=<span class="ruby-identifier">precio</span> 
+      <span class="ruby-identifier">codigo</span> = <span class="ruby-identifier">pedir_codigo_producto</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> [<span class="ruby-identifier">unidades</span>, <span class="ruby-identifier">precios</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pedir_precio_producto" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pedir_precio_producto</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="pedir_precio_producto-source">
+            <pre><span class="ruby-comment"># File ejemplos/almacen.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pedir_precio_producto</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el precio del producto (positivo o cero):&quot;</span>
+        <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+           <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Error: el número debe ser positivo o cero&quot;</span>
+           <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el número de unidades (positivo o cero):&quot;</span>
+           <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pedir_unidades_producto" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pedir_unidades_producto</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="pedir_unidades_producto-source">
+            <pre><span class="ruby-comment"># File ejemplos/almacen.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pedir_unidades_producto</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el número de unidades (positivo):&quot;</span>
+        <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+           <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Error: el número debe ser positivo&quot;</span>
+           <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Introduce el número de unidades (positivo):&quot;</span>
+           <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-pedir_vector" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">pedir_vector</span><span
+            class="method-args">(enteros)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="pedir_vector-source">
+            <pre><span class="ruby-comment"># File ex/2012ene1.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pedir_vector</span>(<span class="ruby-identifier">enteros</span>)
+    <span class="ruby-identifier">i</span>=<span class="ruby-value">0</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;Introduce el valor correspondiente al elemento #{i}: &quot;</span>
+        <span class="ruby-identifier">num</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">0</span>
+           <span class="ruby-identifier">enteros</span>[<span class="ruby-identifier">i</span>]=<span class="ruby-identifier">num</span>
+           <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+           <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;Introduce el valor correspondiente al elemento #{i}: &quot;</span>
+           <span class="ruby-identifier">num</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">i</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-permisos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">permisos</span><span
+            class="method-args">(file=&#39;bin/ls&#39;)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="permisos-source">
+            <pre><span class="ruby-comment"># File ficheros/permisos, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">permisos</span> (<span class="ruby-identifier">file</span>=<span class="ruby-string">&#39;bin/ls&#39;</span>)
+  <span class="ruby-identifier">sys</span>=<span class="ruby-constant">Process</span><span class="ruby-operator">::</span><span class="ruby-constant">Sys</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;UID=#{sys.getuid}&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;GID=#{sys.getgid}&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Efective UID=#{sys.geteuid}&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Efective GID=#{sys.getegid}&quot;</span>
+  <span class="ruby-identifier">permitidos</span>= [<span class="ruby-value">:readable?</span>, <span class="ruby-value">:writable?</span>, <span class="ruby-value">:executable?</span>].<span class="ruby-identifier">inject</span>([]) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">arr</span>, <span class="ruby-identifier">method</span><span class="ruby-operator">|</span>
+       <span class="ruby-identifier">arr</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">method</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">method</span>, <span class="ruby-identifier">file</span>)
+       <span class="ruby-identifier">arr</span>
+   <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Para usted, #{file} es #{permitidos.join(&#39;, &#39;)}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-price_books" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">price_books</span><span
+            class="method-args">(keyword)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="price_books-source">
+            <pre><span class="ruby-comment"># File amazon/amazon.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">price_books</span>(<span class="ruby-identifier">keyword</span>)
+  <span class="ruby-identifier">req</span> = <span class="ruby-constant">Amazon</span><span class="ruby-operator">::</span><span class="ruby-constant">Search</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">$AWS_KEY</span>)
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">keyword_search</span>(<span class="ruby-identifier">keyword</span>, <span class="ruby-string">&#39;books&#39;</span>, <span class="ruby-constant">Amazon</span><span class="ruby-operator">::</span><span class="ruby-constant">Search</span><span class="ruby-operator">::</span><span class="ruby-constant">LIGHT</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">producto</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">newp</span> = <span class="ruby-identifier">producto</span>.<span class="ruby-identifier">our_price</span> <span class="ruby-operator">||</span> <span class="ruby-string">&#39;no disponible&#39;</span>
+    <span class="ruby-identifier">usedp</span> = <span class="ruby-identifier">producto</span>.<span class="ruby-identifier">used_price</span> <span class="ruby-operator">||</span> <span class="ruby-string">&#39;no disponible&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{producto.product_name}: #{newp} nuevo, #{usedp} usado&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-random_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">random_word</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="random_word-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">random_word</span>
+    <span class="ruby-identifier">letters</span> = { <span class="ruby-value">?v</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&#39;aeiou&#39;</span>, <span class="ruby-value">?c</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&#39;bcdfghjklmnpqrstvwxyz&#39;</span> }
+    <span class="ruby-identifier">word</span> = <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-string">&#39;cvcvcv&#39;</span>.<span class="ruby-identifier">each_byte</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">source</span> = <span class="ruby-identifier">letters</span>[<span class="ruby-identifier">x</span>]
+      <span class="ruby-identifier">word</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">source</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">source</span>.<span class="ruby-identifier">length</span>)].<span class="ruby-identifier">chr</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-s_o_n" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">s_o_n</span><span
+            class="method-args">(mensaje)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="s_o_n-source">
+            <pre><span class="ruby-comment"># File ejemplos/lectoescritura.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">s_o_n</span>(<span class="ruby-identifier">mensaje</span>)
+    <span class="ruby-identifier">printf</span> <span class="ruby-string">&quot;%s:&quot;</span>, <span class="ruby-identifier">mensaje</span>
+    <span class="ruby-identifier">rta</span> = <span class="ruby-identifier">gets</span>
+    <span class="ruby-identifier">rta</span>.<span class="ruby-identifier">downcase!</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">rta</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/^[ns]$/</span>
+                <span class="ruby-identifier">printf</span> <span class="ruby-string">&quot;%s:&quot;</span>, <span class="ruby-identifier">mensaje</span>
+                <span class="ruby-identifier">rta</span> = <span class="ruby-identifier">gets</span>
+                <span class="ruby-identifier">rta</span>.<span class="ruby-identifier">downcase!</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">rta</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-stat" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">stat</span><span
+            class="method-args">(v)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="stat-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">stat</span>(<span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">min</span>=<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]
+        <span class="ruby-identifier">max</span>=<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">v</span>.<span class="ruby-identifier">length</span><span class="ruby-value">-1</span>)
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min</span>
+                        <span class="ruby-identifier">min</span> = <span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>]
+                <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>]<span class="ruby-operator">&gt;</span><span class="ruby-identifier">max</span>
+                        <span class="ruby-identifier">max</span>=<span class="ruby-identifier">v</span>[<span class="ruby-identifier">i</span>]
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">return</span> [<span class="ruby-identifier">min</span>, <span class="ruby-identifier">max</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-suma_digitos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">suma_digitos</span><span
+            class="method-args">(n)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="suma_digitos-source">
+            <pre><span class="ruby-comment"># File ejemplos/ejemplos.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">suma_digitos</span>(<span class="ruby-identifier">n</span>)
+        <span class="ruby-identifier">s</span> = <span class="ruby-value">0</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">10</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">suma_digitos</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">/</span> <span class="ruby-value">10</span>)
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-sumar_array" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">sumar_array</span><span
+            class="method-args">(a)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="sumar_array-source">
+            <pre><span class="ruby-comment"># File arrays/arrays, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">sumar_array</span>(<span class="ruby-identifier">a</span>)
+    <span class="ruby-identifier">sum</span> = <span class="ruby-value">0.0</span>
+    <span class="ruby-identifier">a</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">x</span> }
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">sum</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-ver_fichero" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ver_fichero</span><span
+            class="method-args">(nombre)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ver_fichero-source">
+            <pre><span class="ruby-comment"># File ejemplos/lectoescritura.rb, line 40</span>
+<span class="ruby-keyword">def</span>   <span class="ruby-identifier ruby-title">ver_fichero</span>(<span class="ruby-identifier">nombre</span>)
+          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&#39;datos.txt&#39;</span>, <span class="ruby-string">&#39;r&#39;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f1</span><span class="ruby-operator">|</span>
+         <span class="ruby-identifier">f1</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">linea</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-identifier">linea</span>
+         <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-C3-A1rea_tri-C3-A1ngulo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">área_triángulo</span><span
+            class="method-args">(base=1, altura=1)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="C3-A1rea_tri-C3-A1ngulo-source">
+            <pre><span class="ruby-comment"># File mate/areas.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">área_triángulo</span>(<span class="ruby-identifier">base</span>=<span class="ruby-value">1</span>, <span class="ruby-identifier">altura</span>=<span class="ruby-value">1</span>)
+    <span class="ruby-identifier">base</span><span class="ruby-operator">*</span><span class="ruby-identifier">altura</span><span class="ruby-operator">/</span><span class="ruby-value">2.0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -10,7 +10,7 @@ Ejemplos de programas escritos en ruby
 - Ejemplo 3
 
 ### Ejemplo de código
-```
+```python
 require 'ruby2d'
 
 interactive_squares = []

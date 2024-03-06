@@ -50,9 +50,9 @@ class Fate
 
 	Fate.new
 	 
-    Fate.new
+        Fate.new
 	 
-    Fate.new
+        Fate.new
 	 
 	Fate.new
 	 

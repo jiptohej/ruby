@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+#! usr/bin/env ruby
 # encoding: utf-8
 #
 
@@ -32,35 +32,35 @@ def moda(vector, todas=true)
     return modas ? modas[1...modas.size] : modas
     
     # La moda es el elemento que más se repite,
-	# si los elementos no se repiten, no existe.
+    # si los elementos no se repiten, no existe.
 end
 
 
 if __FILE__ == $0
 
-	# esto se podría convertir en un test
-	# primero rellenamos la mayor parte y luego modificamos algunos
-	v = (1..100).to_a
-	v[88]=100
-	v[89]=100
-	v[90]=100
-	v[10]=1
-	v[11]=1
-	v[12]=1
-	v[18]=3
-	v[19]=3
-	v[20]=3
-	puts "A continuación se muestran los datos de prueba"
-	p v
+   # esto se podría convertir en un test
+   # primero rellenamos la mayor parte y luego modificamos algunos
+   v = (1..100).to_a
+   v[88]=100
+   v[89]=100
+   v[90]=100
+   v[10]=1
+   v[11]=1
+   v[12]=1
+   v[18]=3
+   v[19]=3
+   v[20]=3
+   puts "A continuación se muestran los datos de prueba"
+   p v
 
-	print "El valor medio es igual a : "
-	p media(v)
+   print "El valor medio es igual a : "
+   p media(v)
 
 
-	print "El valor de la mediana es igual a :"
-	puts mediana(v)
-	print "A continuación se mostrarán los valores de la moda:"
-	print moda(v)
+   print "El valor de la mediana es igual a :"
+   puts mediana(v)
+   print "A continuación se mostrarán los valores de la moda:"
+   print moda(v)
 
 end
 

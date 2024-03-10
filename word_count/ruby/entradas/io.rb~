@@ -1,5 +1,0 @@
-# -*- coding: utf-8 -*-
-# En este ejemplo se muestra la utilización de las variables globales $stdin,
-# $stdout y $stderr con el fin de observar su utilización
-
-$stdin.gets() {|linea| $stdout.puts(linea) ; $stderr.puts(linea) }

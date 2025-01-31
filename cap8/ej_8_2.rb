@@ -5,7 +5,7 @@
 class Aviso
    @@translations = {
       :en => 'Wet Floor',
-      :es => 'Piso mojado',
+      :es => 'Suelo deslizante',
       :fr => 'Le sol est humide'
       }
       

@@ -4,19 +4,20 @@
 
 class Cesar
    
-   Alfabeto="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-   Encripta="defghijklmnopqrstuvwxyzabcDEFGHIJKLMNOPQRSTUVWXYZABC"
+   @Alfabeto="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+   @Encripta="defghijklmnopqrstuvwxyzabcDEFGHIJKLMNOPQRSTUVWXYZABC"
    
-   @texto = ""
+   @texto = "amigos"
    
-   def encriptar(texto="dabale arroz a la zorra el abad")
-       @texto = texto.tr(Alfabeto, Encripta)
+   def encriptar(texto)
+       @texto = texto.tr(@Alfabeto, @Encripta)
    end
    
    def desencriptar
-	   @texto.tr(Encripta, Alfabeto)
+	   @texto.tr(@Encripta, @Alfabeto)
    end
    
+   puts Cesar
 end
 
 
@@ -27,8 +28,6 @@ if __FILE__ == $0
 	e = c.encriptar("alfa")
 
 	d = c.desencriptar
-
-	puts c
 	
 	puts e
 

@@ -2,4 +2,9 @@ alfabeto="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 encripta="defghijklmnopqrstuvwxyzabcDEFGHIJKLMNOPQRSTUVWXYZABC"
 
 
-texto_enc= texto.tr(encripta, alfabeto)
+puts encripta
+
+texto_enc= alfabeto.tr(encripta, alfabeto)
+
+puts texto_enc
+
